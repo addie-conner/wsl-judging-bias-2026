@@ -1,0 +1,185 @@
+{
+  "heterogeneity": {
+    "n_surfers": 100,
+    "n_significant": 16,
+    "top_over_scored": [
+      {
+        "surfer": "Macy Callaghan",
+        "country": null,
+        "n_waves": 62,
+        "bias_resid": 0.5456415227871408
+      },
+      {
+        "surfer": "Frederico Morais",
+        "country": "PRT",
+        "n_waves": 81,
+        "bias_resid": 0.437793092964703
+      },
+      {
+        "surfer": "Michael Rodrigues",
+        "country": null,
+        "n_waves": 83,
+        "bias_resid": 0.4023327802778367
+      },
+      {
+        "surfer": "Courtney Conlogue",
+        "country": "USA",
+        "n_waves": 208,
+        "bias_resid": 0.35841085865058947
+      },
+      {
+        "surfer": "Imaikalani deVault",
+        "country": null,
+        "n_waves": 192,
+        "bias_resid": 0.35833849637509796
+      },
+      {
+        "surfer": "Tatiana Weston-Webb",
+        "country": "BRA",
+        "n_waves": 441,
+        "bias_resid": 0.3324864607741265
+      },
+      {
+        "surfer": "Matthew McGillivray",
+        "country": "ZAF",
+        "n_waves": 467,
+        "bias_resid": -0.20929057049473854
+      },
+      {
+        "surfer": "John John Florence",
+        "country": "USA",
+        "n_waves": 485,
+        "bias_resid": -0.24692466632401774
+      },
+      {
+        "surfer": "Ethan Ewing",
+        "country": "AUS",
+        "n_waves": 604,
+        "bias_resid": -0.2941220132617205
+      },
+      {
+        "surfer": "Jack Robinson",
+        "country": "AUS",
+        "n_waves": 657,
+        "bias_resid": -0.2996207316994857
+      }
+    ],
+    "top_under_scored": [
+      {
+        "surfer": "Sawyer Lindblad",
+        "country": "USA",
+        "n_waves": 65,
+        "bias_resid": -0.8253818114950653
+      },
+      {
+        "surfer": "Kauli Vaast",
+        "country": null,
+        "n_waves": 72,
+        "bias_resid": -0.6254235476017135
+      },
+      {
+        "surfer": "Owen Wright",
+        "country": "AUS",
+        "n_waves": 50,
+        "bias_resid": -0.5652336540969071
+      },
+      {
+        "surfer": "George Pittar",
+        "country": null,
+        "n_waves": 105,
+        "bias_resid": -0.5624012483545016
+      },
+      {
+        "surfer": "Sawyer Lindblad",
+        "country": null,
+        "n_waves": 101,
+        "bias_resid": -0.4788029163528027
+      },
+      {
+        "surfer": "Kanoa Igarashi",
+        "country": "JPN",
+        "n_waves": 607,
+        "bias_resid": -0.3234071595684575
+      },
+      {
+        "surfer": "Jack Robinson",
+        "country": "AUS",
+        "n_waves": 657,
+        "bias_resid": -0.2996207316994857
+      },
+      {
+        "surfer": "Ethan Ewing",
+        "country": "AUS",
+        "n_waves": 604,
+        "bias_resid": -0.2941220132617205
+      },
+      {
+        "surfer": "John John Florence",
+        "country": "USA",
+        "n_waves": 485,
+        "bias_resid": -0.24692466632401774
+      },
+      {
+        "surfer": "Matthew McGillivray",
+        "country": "ZAF",
+        "n_waves": 467,
+        "bias_resid": -0.20929057049473854
+      }
+    ]
+  },
+  "h32_bra_panels_by_year": {
+    "2018": {
+      "n": 1716,
+      "pct_at_least_1_bra": 0.9912587412587412,
+      "pct_at_least_2_bra": 0.6643356643356644,
+      "mean_bra_judges": 1.7185314685314685
+    },
+    "2019": {
+      "n": 2263,
+      "pct_at_least_1_bra": 0.9832081307998233,
+      "pct_at_least_2_bra": 0.5395492708793637,
+      "mean_bra_judges": 1.5576668139637648
+    },
+    "2021": {
+      "n": 227,
+      "pct_at_least_1_bra": 1.0,
+      "pct_at_least_2_bra": 0.3832599118942731,
+      "mean_bra_judges": 1.3832599118942732
+    },
+    "2022": {
+      "n": 2008,
+      "pct_at_least_1_bra": 0.9975099601593626,
+      "pct_at_least_2_bra": 0.5313745019920318,
+      "mean_bra_judges": 1.5642430278884463
+    },
+    "2023": {
+      "n": 1567,
+      "pct_at_least_1_bra": 1.0,
+      "pct_at_least_2_bra": 0.541799617102744,
+      "mean_bra_judges": 1.5679642629227823
+    },
+    "2024": {
+      "n": 1121,
+      "pct_at_least_1_bra": 0.8198037466547725,
+      "pct_at_least_2_bra": 0.1793041926851026,
+      "mean_bra_judges": 0.9991079393398751
+    },
+    "2025": {
+      "n": 1192,
+      "pct_at_least_1_bra": 0.8196308724832215,
+      "pct_at_least_2_bra": 0.07802013422818792,
+      "mean_bra_judges": 0.8976510067114094
+    },
+    "2026": {
+      "n": 673,
+      "pct_at_least_1_bra": 0.8410104011887073,
+      "pct_at_least_2_bra": 0.0,
+      "mean_bra_judges": 0.8410104011887073
+    }
+  },
+  "mechanism_cross_corr": {
+    "mean_abs_corr": 0.041601446922622236,
+    "pc1_var_explained": 0.2818870733448806,
+    "verdict": "INDEPENDENT"
+  }
+}

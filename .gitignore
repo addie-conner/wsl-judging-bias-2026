@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Local secrets (never commit)
+.env
+.env.local
+*.key
+*.pem
+
+# Data backups (we only commit canonical files)
+*.bak_*
+*.lowqual_*

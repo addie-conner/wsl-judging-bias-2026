@@ -1,0 +1,213 @@
+{
+  "FDR": {
+    "n_tests": 38,
+    "n_survive_BH_05": 13,
+    "n_survive_bonferroni_05": 11,
+    "top_surviving": [
+      {
+        "name": "full_paper_grade_results.json.T4_blocs.PRT.p",
+        "p_raw": 1.2702409063177778e-144,
+        "p_bh": 4.826915444007556e-143
+      },
+      {
+        "name": "comprehensive_stats_2026-05-04.json.ANOVA.two_way.C(ec).p",
+        "p_raw": 6.258389381811125e-57,
+        "p_bh": 1.1890939825441138e-55
+      },
+      {
+        "name": "comprehensive_stats_2026-05-04.json.ANOVA.one_way_sc.sc_p",
+        "p_raw": 2.9022110606713e-10,
+        "p_bh": 3.676134010183647e-09
+      },
+      {
+        "name": "full_paper_grade_results.json.T4_blocs.AUS.p",
+        "p_raw": 2.0008960185367064e-09,
+        "p_bh": 1.900851217609871e-08
+      },
+      {
+        "name": "full_paper_grade_results.json.T4_blocs.ZAF.p",
+        "p_raw": 3.599200374875178e-09,
+        "p_bh": 2.7353922849051354e-08
+      },
+      {
+        "name": "comprehensive_stats_2026-05-04.json.ANOVA.two_way.C(sc).p",
+        "p_raw": 7.380880196004301e-08,
+        "p_bh": 4.674557457469391e-07
+      },
+      {
+        "name": "comprehensive_stats_2026-05-04.json.ANOVA.three_way.C(sc):C(gender_str).p",
+        "p_raw": 4.6330842964244813e-07,
+        "p_bh": 2.51510290377329e-06
+      },
+      {
+        "name": "comprehensive_stats_2026-05-04.json.ANOVA.three_way.C(ec):C(gender_str).p",
+        "p_raw": 3.623394732600087e-05,
+        "p_bh": 0.00017211124979850414
+      },
+      {
+        "name": "full_paper_grade_results.json.T2.heat_FE.p",
+        "p_raw": 0.00018070701098841163,
+        "p_bh": 0.0006866866417559642
+      },
+      {
+        "name": "comprehensive_stats_2026-05-04.json.robust_T2.ols_p",
+        "p_raw": 0.00018070701098841163,
+        "p_bh": 0.0006866866417559642
+      },
+      {
+        "name": "comprehensive_stats_2026-05-04.json.multivariate.manova_country.p",
+        "p_raw": 0.000640682200629331,
+        "p_bh": 0.0022132657839922343
+      },
+      {
+        "name": "full_paper_grade_results.json.T2.no_FE.p",
+        "p_raw": 0.006788700852100964,
+        "p_bh": 0.02149755269831972
+      },
+      {
+        "name": "full_paper_grade_results.json.compat_by_year.2023.p",
+        "p_raw": 0.013710762206022811,
+        "p_bh": 0.04007761260222052
+      },
+      {
+        "name": "comprehensive_stats_2026-05-04.json.ANOVA.two_way.C(sc):C(ec).p",
+        "p_raw": 0.020478343623285697,
+        "p_bh": 0.055584075548918324
+      },
+      {
+        "name": "full_paper_grade_results.json.T4_blocs.USA.p",
+        "p_raw": 0.07214409155174316,
+        "p_bh": 0.18276503193108268
+      }
+    ]
+  },
+  "sensitivity": {
+    "rr_aus_bloc": 1.1664662355287223,
+    "e_value_point": 1.607121705368626,
+    "e_value_ci_lower": 1.465090338165807,
+    "rosenbaum_scan": [
+      {
+        "gamma": 1.0,
+        "z_under_bias": 5.997734258895722,
+        "p_one_sided": 1.0004479467085048e-09
+      },
+      {
+        "gamma": 1.5,
+        "z_under_bias": 5.5922691507875575,
+        "p_one_sided": 1.1206051642176362e-08
+      },
+      {
+        "gamma": 2.0,
+        "z_under_bias": 5.304587078335777,
+        "p_one_sided": 5.646416356697159e-08
+      },
+      {
+        "gamma": 2.5,
+        "z_under_bias": 5.081443527021567,
+        "p_one_sided": 1.8728868866890735e-07
+      },
+      {
+        "gamma": 3.0,
+        "z_under_bias": 4.899121970227612,
+        "p_one_sided": 4.813293698058274e-07
+      },
+      {
+        "gamma": 5.0,
+        "z_under_bias": 4.388296346461622,
+        "p_one_sided": 5.712102038479827e-06
+      }
+    ]
+  },
+  "synth_control_BRA_panel": {
+    "weights": {
+      "AUS": 0.7300793742744929,
+      "USA": 0.269920625725507,
+      "FRA": 1.533603972980746e-16,
+      "ZAF": 8.28059409235804e-17
+    },
+    "post_period": []
+  },
+  "xgboost_shap": {
+    "r2": 0.18398989093225904,
+    "top10_shap": [
+      {
+        "feature": "ec_AUS",
+        "shap_imp": 0.24119432270526886
+      },
+      {
+        "feature": "wave_index_for_surfer",
+        "shap_imp": 0.21379365026950836
+      },
+      {
+        "feature": "wave_position_in_heat",
+        "shap_imp": 0.14389455318450928
+      },
+      {
+        "feature": "heat_number",
+        "shap_imp": 0.1282780021429062
+      },
+      {
+        "feature": "rank",
+        "shap_imp": 0.12437095493078232
+      },
+      {
+        "feature": "year",
+        "shap_imp": 0.10974608361721039
+      },
+      {
+        "feature": "is_male",
+        "shap_imp": 0.09286987781524658
+      },
+      {
+        "feature": "ec_ZAF",
+        "shap_imp": 0.0816580057144165
+      },
+      {
+        "feature": "ec_SLV",
+        "shap_imp": 0.07064618915319443
+      },
+      {
+        "feature": "ec_PRT",
+        "shap_imp": 0.053459927439689636
+      }
+    ]
+  },
+  "causal_forest": {
+    "ate": -0.02373964736357295,
+    "ci_lo": -0.5646829775026613,
+    "ci_hi": 0.5172036827755152,
+    "cate_std": 0.2696944871476598,
+    "cate_by_rank_quartile": {
+      "1": -0.08471873780985796,
+      "2": -0.052428380375835276,
+      "3": 0.04293483930162606,
+      "4": 0.007244925867923795
+    }
+  },
+  "H32_permutation": {
+    "observed_slope": -0.1070192823338716,
+    "p_perm": 0.0,
+    "null_mean": 1.7143109453810312e-05,
+    "null_sd": 0.002601943145905218,
+    "n_perm": 1000
+  },
+  "hierarchical_bayes": {
+    "beta_rank_mean": -0.004148362015618715,
+    "beta_rank_ci_lo": -0.010211166110524802,
+    "beta_rank_ci_hi": 0.001381218260472407,
+    "sigma_surfer_mean": 0.27750064217595677,
+    "sigma_event_mean": 0.5607282210773717,
+    "sigma_obs_mean": 2.4109809572420007,
+    "icc_surfer": 0.012602781874696937,
+    "icc_event": 0.051316540456433184,
+    "n": 15000,
+    "elapsed_s": 25.510401010513306,
+    "ppc_round_rate_mean": 0.03998566666666667,
+    "ppc_round_rate_ci": [
+      0.036928333333333334,
+      0.04301166666666666
+    ],
+    "ppc_observed_round_rate": 0.2304,
+    "ppc_pass": false
+  }
+}

@@ -1,0 +1,430 @@
+{
+  "schema_version": "1.0",
+  "generated": "2026-05-03",
+  "wave_pool_venues": [
+    {
+      "venue": "Surf Ranch",
+      "location": "Lemoore, California, USA",
+      "country": "USA",
+      "owner": "KS Wave Co (Kelly Slater Wave Company / WSL parent)",
+      "opening_date": "2015 (private), 2018 (public via WSL)",
+      "technology": "kelly_slater",
+      "events": [
+        {
+          "event_name": "Founders' Cup of Surfing",
+          "year": 2018,
+          "month": 5,
+          "gender": "both",
+          "level": "EXHIBITION",
+          "format": "team",
+          "winners": "Team Brazil (overall); Gabriel Medina + Carissa Moore individual",
+          "data_access": "news_only",
+          "wsl_event_code": null,
+          "notes": "First WSL-sanctioned event in a wave pool."
+        },
+        {
+          "event_name": "Surf Ranch Pro 2018",
+          "year": 2018,
+          "month": 9,
+          "gender": "both",
+          "level": "CT",
+          "format": "individual",
+          "winners": "Filipe Toledo / Stephanie Gilmore",
+          "data_access": "results_page",
+          "wsl_event_code": "2018evt07_or_08",
+          "notes": "First CT event in a wave pool. Heat Analyzer coverage incomplete pre-2021."
+        },
+        {
+          "event_name": "Freshwater Pro 2019",
+          "year": 2019,
+          "month": 9,
+          "gender": "both",
+          "level": "CT",
+          "format": "individual",
+          "winners": "Kolohe Andino / Lakey Peterson",
+          "data_access": "results_page",
+          "wsl_event_code": "2019evt07_or_08",
+          "notes": "CT stop. Heat Analyzer pre-2021 archive sparse."
+        },
+        {
+          "event_name": "Surf Ranch Pro 2021",
+          "year": 2021,
+          "month": 9,
+          "gender": "both",
+          "level": "CT",
+          "format": "individual",
+          "winners": "Gabriel Medina / Carissa Moore",
+          "data_access": "results_page",
+          "wsl_event_code": "2021evt08_or_09",
+          "notes": "CT stop, last lemoore CT before Trestles became Finals venue. Not reachable via numeric event-code probe in current scraper run."
+        },
+        {
+          "event_name": "Surf Ranch Pro 2023",
+          "year": 2023,
+          "month": 5,
+          "gender": "both",
+          "level": "CT",
+          "format": "individual",
+          "winners": "Griffin Colapinto / Carissa Moore",
+          "data_access": "results_page",
+          "wsl_event_code": "2023evt06_or_10",
+          "notes": "CT mid-season specialty stop. Heat Analyzer page returns 404 under expected numeric scheme; results live on /events/2023/ct/71/."
+        }
+      ]
+    },
+    {
+      "venue": "Surf Abu Dhabi",
+      "location": "Hudayriyat Island, Abu Dhabi, UAE",
+      "country": "ARE",
+      "owner": "Modon Properties (Abu Dhabi); KS Wave Co tech license",
+      "opening_date": "2024-10",
+      "technology": "kelly_slater",
+      "events": [
+        {
+          "event_name": "Surf Abu Dhabi Pro 2025",
+          "year": 2025,
+          "month": 2,
+          "gender": "both",
+          "level": "CT",
+          "format": "individual",
+          "winners": "Italo Ferreira / Caitlin Simmers",
+          "data_access": "results_page",
+          "wsl_event_code": "2025evt02",
+          "notes": "First-ever CT in saltwater wave pool. Heat Analyzer index page exists but per-heat detail pages return 404 \u2014 Abu Dhabi heats are NOT mirrored to the YouTube heat-analyzer (likely because video-replay infrastructure is different in the wave pool). Heat-level totals (winner, loser, totals) reachable via /events/2025/ct/321/surf-abu-dhabi-pro/results. We capture QF/SF/F totals here from public news sources but two-wave breakdowns are not exposed for early rounds."
+        }
+      ]
+    },
+    {
+      "venue": "URBNSURF Melbourne",
+      "location": "Tullamarine, Melbourne, Australia",
+      "country": "AUS",
+      "owner": "URBNSURF (Andrew Ross)",
+      "opening_date": "2020-01",
+      "technology": "wavegarden",
+      "events": [
+        {
+          "event_name": "Rip Curl Pro URBNSURF (QS1000)",
+          "year": 2022,
+          "month": 12,
+          "gender": "both",
+          "level": "QS",
+          "format": "individual",
+          "winners": "Mikey McDonagh / India Robinson",
+          "data_access": "results_page",
+          "wsl_event_code": null,
+          "notes": "First-ever WSL QS event held in a Wavegarden Cove. 80 surfers, single-day format."
+        },
+        {
+          "event_name": "BYD Pro URBNSURF (QS3000)",
+          "year": 2023,
+          "month": 2,
+          "gender": "both",
+          "level": "QS",
+          "format": "individual",
+          "winners": "Reef Heazlewood / Sophie McCulloch",
+          "data_access": "results_page",
+          "wsl_event_code": null,
+          "notes": "QS3000 upgrade. 120 surfers."
+        },
+        {
+          "event_name": "BYD Pro URBNSURF (QS3000)",
+          "year": 2024,
+          "month": 2,
+          "gender": "both",
+          "level": "QS",
+          "format": "individual",
+          "winners": "Joel Vaughan / Erin Brooks",
+          "data_access": "results_page",
+          "wsl_event_code": null,
+          "notes": "Repeat. Held Feb 3, 2024."
+        }
+      ]
+    },
+    {
+      "venue": "URBNSURF Sydney",
+      "location": "Sydney Olympic Park, NSW, Australia",
+      "country": "AUS",
+      "owner": "URBNSURF",
+      "opening_date": "2024-06",
+      "technology": "wavegarden",
+      "events": [
+        {
+          "event_name": "URBNSURF Sydney exhibition / pre-comp tests",
+          "year": 2024,
+          "month": 7,
+          "gender": "both",
+          "level": "EXHIBITION",
+          "format": "exhibition",
+          "winners": null,
+          "data_access": "none",
+          "wsl_event_code": null,
+          "notes": "No WSL-sanctioned comp held yet as of May 2025; facility hosts coaching sessions + private events."
+        }
+      ]
+    },
+    {
+      "venue": "BSR Surf Resort",
+      "location": "Waco, Texas, USA",
+      "country": "USA",
+      "owner": "BSR Cable Park (Stuart Parsons family)",
+      "opening_date": "2018-05",
+      "technology": "american_wave_machines_perfectswell",
+      "events": [
+        {
+          "event_name": "Stab High",
+          "year": 2018,
+          "month": 8,
+          "gender": "men",
+          "level": "SPECIALTY",
+          "format": "aerial-only invitational",
+          "winners": "Noah Deane (best air) / Eithan Osborne (overall)",
+          "data_access": "news_only",
+          "wsl_event_code": null,
+          "notes": "Stab Magazine specialty event, aerial-focused. Not WSL-sanctioned."
+        },
+        {
+          "event_name": "Stab High 2.0",
+          "year": 2019,
+          "month": 6,
+          "gender": "men",
+          "level": "SPECIALTY",
+          "format": "aerial-only invitational",
+          "winners": "Kevin Schulz (Freak Peak)",
+          "data_access": "news_only",
+          "wsl_event_code": null,
+          "notes": "BSR named USA Surfing 2018 Junior Worlds + 2020 Olympic training site. Wave pool is now closed; lawsuit and rebrand history."
+        },
+        {
+          "event_name": "WSL Surf Tour BSR pro / dev",
+          "year": 2021,
+          "month": 5,
+          "gender": "both",
+          "level": "OTHER",
+          "format": "qualifying / dev tour",
+          "winners": null,
+          "data_access": "news_only",
+          "wsl_event_code": null,
+          "notes": "wacotrib.com 2021-05 article references a WSL-sanctioned touring event at BSR. Limited public scoring data."
+        }
+      ]
+    },
+    {
+      "venue": "Praia da Grama",
+      "location": "Itupeva, Sao Paulo, Brazil",
+      "country": "BRA",
+      "owner": "Fazenda da Grama (private estate)",
+      "opening_date": "2023",
+      "technology": "wavegarden",
+      "events": [
+        {
+          "event_name": "Circuito Banco do Brasil de Surfe \u2014 Praia da Grama",
+          "year": 2023,
+          "month": 10,
+          "gender": "both",
+          "level": "QS",
+          "format": "individual",
+          "winners": "Miguel Pupo / Sophia Medina",
+          "data_access": "results_page",
+          "wsl_event_code": "2023qs210",
+          "notes": "First WSL Latin America QS in an artificial wave pool. South America's first Wavegarden Cove (52 modules)."
+        }
+      ]
+    },
+    {
+      "venue": "Palm Springs Surf Club",
+      "location": "Palm Springs, California, USA",
+      "country": "USA",
+      "owner": "Cheyne Magnusson + investor group",
+      "opening_date": "2024-02",
+      "technology": "endless_surf",
+      "events": [
+        {
+          "event_name": "Rip Curl GromSearch National Final",
+          "year": 2024,
+          "month": 10,
+          "gender": "both",
+          "level": "JQS",
+          "format": "junior",
+          "winners": "Multiple age-group winners",
+          "data_access": "results_page",
+          "wsl_event_code": null,
+          "notes": "Junior event. Endless Surf tech (different from Slater/Wavegarden). No senior pro tour stop yet as of May 2025."
+        }
+      ]
+    },
+    {
+      "venue": "The Wave Bristol",
+      "location": "Bristol, UK",
+      "country": "GBR",
+      "owner": "The Wave Ltd (Nick Hounsfield)",
+      "opening_date": "2019-11",
+      "technology": "wavegarden",
+      "events": [
+        {
+          "event_name": "Various Wavegarden Cove regional events / coaching",
+          "year": 2022,
+          "month": 6,
+          "gender": "both",
+          "level": "OTHER",
+          "format": "regional",
+          "winners": null,
+          "data_access": "none",
+          "wsl_event_code": null,
+          "notes": "First commercial Wavegarden Cove in Europe. No WSL-sanctioned pro comp publicly listed as of May 2025."
+        }
+      ]
+    },
+    {
+      "venue": "Lost Shore Surf Resort",
+      "location": "Edinburgh, Scotland, UK",
+      "country": "GBR",
+      "owner": "Lost Shore Ltd",
+      "opening_date": "2024-11",
+      "technology": "wavegarden",
+      "events": []
+    },
+    {
+      "venue": "Surf Lakes (Yeppoon prototype)",
+      "location": "Yeppoon, Queensland, Australia",
+      "country": "AUS",
+      "owner": "Surf Lakes Holdings (Aaron Trevis)",
+      "opening_date": "2018 (prototype, intermittent)",
+      "technology": "surf_lakes",
+      "events": [
+        {
+          "event_name": "Surf Lakes pro testing demo",
+          "year": 2019,
+          "month": 5,
+          "gender": "men",
+          "level": "EXHIBITION",
+          "format": "demo",
+          "winners": null,
+          "data_access": "none",
+          "wsl_event_code": null,
+          "notes": "Concentric-ring 5-wave tech, prototype phase. Pro surfers used as testers; no sanctioned competitions to date. Closed for rebuild 2022 with Global Surf Parks."
+        }
+      ]
+    },
+    {
+      "venue": "Surfland Brasil",
+      "location": "Garopaba, Santa Catarina, Brazil",
+      "country": "BRA",
+      "owner": "Surfland Brasil",
+      "opening_date": "2021",
+      "technology": "wavegarden",
+      "events": [
+        {
+          "event_name": "Rip Curl GromSearch Brasil Final",
+          "year": 2025,
+          "month": 7,
+          "gender": "both",
+          "level": "JQS",
+          "format": "junior",
+          "winners": null,
+          "data_access": "news_only",
+          "wsl_event_code": null,
+          "notes": "Junior comp, ~200 athletes. No senior CT/CS/QS stop yet."
+        }
+      ]
+    }
+  ],
+  "olympic_venues": [
+    {
+      "venue": "Teahupo'o",
+      "location": "Tahiti, French Polynesia",
+      "country": "PYF",
+      "owner": "ISA / Paris 2024 organizing committee (host)",
+      "opening_date": "n/a (natural reef pass)",
+      "technology": "natural_ocean",
+      "events": [
+        {
+          "event_name": "Paris 2024 Olympic Surfing \u2014 Men's Shortboard",
+          "year": 2024,
+          "month": 7,
+          "gender": "men",
+          "level": "OLYMPIC",
+          "format": "individual",
+          "winners": "Kauli Vaast (FRA) / Jack Robinson (AUS) silver / Gabriel Medina (BRA) bronze",
+          "data_access": "wikipedia",
+          "wsl_event_code": null,
+          "notes": "ISA-judged. Per-judge scores NOT public; aggregate wave scores ARE public."
+        },
+        {
+          "event_name": "Paris 2024 Olympic Surfing \u2014 Women's Shortboard",
+          "year": 2024,
+          "month": 7,
+          "gender": "women",
+          "level": "OLYMPIC",
+          "format": "individual",
+          "winners": "Caroline Marks (USA) / Tatiana Weston-Webb (BRA) silver / Johanne Defay (FRA) bronze",
+          "data_access": "wikipedia",
+          "wsl_event_code": null,
+          "notes": "ISA-judged. Aug 1 incident: Australian judge Benjamin Lowe removed from panel after social-media photo with Ethan Ewing + coach."
+        }
+      ]
+    },
+    {
+      "venue": "Lower Trestles (planned LA 2028)",
+      "location": "San Onofre, California, USA",
+      "country": "USA",
+      "owner": "ISA / LA 2028 (planned)",
+      "opening_date": "n/a (natural)",
+      "technology": "natural_ocean",
+      "events": [
+        {
+          "event_name": "Los Angeles 2028 Olympic Surfing (planned)",
+          "year": 2028,
+          "month": 7,
+          "gender": "both",
+          "level": "OLYMPIC",
+          "format": "individual",
+          "winners": null,
+          "data_access": "none",
+          "wsl_event_code": null,
+          "notes": "Confirmed venue: Lower Trestles. Same break that hosts WSL CT Finals. ISA + WSL judging-pool overlap will be tested live."
+        }
+      ]
+    },
+    {
+      "venue": "Sydney / Brisbane (planned BNE 2032)",
+      "location": "Australia",
+      "country": "AUS",
+      "owner": "ISA / Brisbane 2032 (planned)",
+      "opening_date": "n/a",
+      "technology": "tbd",
+      "events": [
+        {
+          "event_name": "Brisbane 2032 Olympic Surfing (TBD)",
+          "year": 2032,
+          "month": 7,
+          "gender": "both",
+          "level": "OLYMPIC",
+          "format": "individual",
+          "winners": null,
+          "data_access": "none",
+          "wsl_event_code": null,
+          "notes": "Venue not finalized. Surf Lakes Yeppoon is a candidate (would be first Olympic surf in artificial wave pool)."
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "n_wavepool_venues": 11,
+    "n_wavepool_events": 18,
+    "n_olympic_venues": 3,
+    "n_olympic_events_logged": 4,
+    "wave_pool_events_with_heat_analyzer_data": 0,
+    "wave_pool_events_with_results_page_only": 10,
+    "wave_pool_events_news_only": 5,
+    "wave_pool_events_no_data": 3
+  },
+  "honest_gaps": [
+    "Surf Ranch 2018-2019 (Founders' Cup, original Surf Ranch Pro, Freshwater Pro): WSL Heat Analyzer pre-2021 archive is sparse; results pages exist but heat-by-heat wave-score data not parseable with current scraper. Ad-hoc PDF / news scrapes possible.",
+    "Surf Ranch Pro 2021 + 2023: known CT events but Heat Analyzer URL scheme returns 404 under the numeric event-code probe used by wsl_results.py. Likely these are under different event codes (e.g. /events/2021/ct/2912/). A targeted scrape via the /events/{year}/ct/{tour_id}/ pattern would recover them; out of scope for this best-effort wave-pool extension run.",
+    "URBNSURF Melbourne 2022/2023/2024 QS events: results published as one-line news; no Heat Analyzer-style per-wave scoring available. The Wavegarden Cove tech is more amenable to data release than Slater tech but WSL has not opened it up.",
+    "Praia da Grama 2023 QS: Brazilian-language results page exists (wsllatinamerica.com) but no per-wave heat data exposed.",
+    "BSR Waco Stab High events: Stab Magazine specialty events, no judge-panel breakdowns published.",
+    "Olympic 2024 per-judge data: ISA does NOT publish individual judge scores. Only the 5-judge mean (after high/low drop) is exposed via olympics.com. We capture the two scoring waves per surfer per heat \u2014 sufficient for heat-level analysis but not for judge-level analysis.",
+    "URBNSURF Sydney, The Wave Bristol, Lost Shore Edinburgh, Surf Lakes Yeppoon: no public sanctioned-pro data as of May 2025. Pure facility entries."
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "mixture_bayesian_PPC": {
+    "pi_round_mean": 0.13933399709784985,
+    "pi_round_ci": [
+      0.13051627849839512,
+      0.1491248842567021
+    ],
+    "ppc_round_rate_mean": 0.0454400625,
+    "ppc_round_rate_ci": [
+      0.040621875,
+      0.050125
+    ],
+    "observed_round_rate": 0.234375,
+    "ppc_pass": false,
+    "elapsed_s": 37.58878517150879
+  },
+  "permutation_aus_bloc": {
+    "observed_diff": 0.616397974051643,
+    "p_perm": 0.1262,
+    "null_mean": 0.546460861737577,
+    "null_sd": 0.06092329903369103,
+    "n_perm": 10000,
+    "method": "Within-event permutation of AUS-bloc treatment label"
+  },
+  "holdout_validation": {
+    "manifest": {
+      "holdout_strategy": "2025 women's CT only",
+      "rationale": "Temporally late + gender-discrete; allows replication of effects discovered on training data. Locked at this commit and not used for any exploratory or hypothesis-discovery analysis.",
+      "training_rows": 23086,
+      "holdout_rows": 1815,
+      "training_years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "holdout_years": [
+        2025
+      ],
+      "training_genders": [
+        "m",
+        "w"
+      ],
+      "holdout_genders": [
+        "w"
+      ],
+      "training_sha256": "9f3a928ee7a058645873bbae1d45030a",
+      "holdout_sha256": "c7130018b373836efd3b8542e9380a22",
+      "locked_at": "2026-05-03"
+    },
+    "n_holdout": 1815,
+    "T2_rank_prior_holdout": {
+      "coef": -0.034337431950742764,
+      "p": 0.0007647570968248637,
+      "n": 1386
+    },
+    "H11_round_rate_holdout": 0.25179063360881543,
+    "home_event_holdout": {
+      "coef": 0.4749970680860027,
+      "p": 0.011946654871655126,
+      "n_match": 328
+    }
+  },
+  "CS_DiD_bra_panel": {
+    "treated": "BRA",
+    "controls": [
+      "AUS",
+      "USA",
+      "FRA",
+      "ZAF",
+      "PRT",
+      "JPN",
+      "PER",
+      "IDN"
+    ],
+    "pre_years": [
+      "2018",
+      "2019",
+      "2021",
+      "2022"
+    ],
+    "post_years": [
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "bra_pre_avg": 1.5559253055694882,
+    "att_per_year": {
+      "2023": {
+        "bra_dev": 0.012038957353294188,
+        "ctrl_dev": -0.10728075459848968,
+        "att": 0.11931971195178387
+      },
+      "2024": {
+        "bra_dev": -0.5568173662296131,
+        "ctrl_dev": -0.06354526242181519,
+        "att": -0.4932721038077979
+      },
+      "2025": {
+        "bra_dev": -0.6582742988580788,
+        "ctrl_dev": 0.14756304863227376,
+        "att": -0.8058373474903525
+      },
+      "2026": {
+        "bra_dev": -0.7149149043807809,
+        "ctrl_dev": 0.18441027818058664,
+        "att": -0.8993251825613675
+      }
+    },
+    "intervention_date": "2023-10-11 (Pereira head-judge transition)"
+  }
+}

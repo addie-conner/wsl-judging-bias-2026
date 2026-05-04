@@ -1,0 +1,169 @@
+{
+  "SBM_louvain": {
+    "n_communities": 3,
+    "modularity": 0.04262546570238879,
+    "top_communities": [
+      [
+        "J_Hawaii",
+        "J_Japan",
+        "J_New Zealand",
+        "J_United States",
+        "S_BRA",
+        "S_ITA",
+        "S_JPN",
+        "S_MAR",
+        "S_USA"
+      ],
+      [
+        "J_Brazil",
+        "J_French Polynesia",
+        "J_Portugal",
+        "J_South Africa",
+        "S_AUS",
+        "S_FRA",
+        "S_PRT",
+        "S_ZAF"
+      ],
+      [
+        "J_Australia",
+        "J_Basque Country",
+        "J_France",
+        "S_CRI",
+        "S_IDN",
+        "S_PER"
+      ]
+    ]
+  },
+  "dcor_MI": {
+    "rank_score_pearson": -0.014668163076194627,
+    "rank_score_spearman": -0.012797672254326639,
+    "rank_score_dcor": 0.05146710122758581,
+    "year_score_dcor": 0.036689302246830646,
+    "MI": {
+      "rank": 0.03290718126789205,
+      "year": 0.013002096526305351,
+      "home_match": 0.0
+    }
+  },
+  "NMF_nielsen_k2": {
+    "W": {
+      "AUS": [
+        0.7208971150631425,
+        0.15786353724251107
+      ],
+      "USA": [
+        0.6375146596920251,
+        0.0
+      ],
+      "BRA": [
+        0.5138266816999656,
+        0.05657971412813928
+      ],
+      "FRA": [
+        0.29551727134612066,
+        0.44633521556794425
+      ],
+      "ZAF": [
+        0.47824192078215877,
+        0.7040978213192329
+      ]
+    },
+    "H": {
+      "AUS": [
+        0.8519517976054829,
+        0.15408204640418993
+      ],
+      "USA": [
+        0.4860879657775763,
+        0.06113863853902025
+      ],
+      "BRA": [
+        0.35011350572372363,
+        0.0
+      ],
+      "FRA": [
+        0.5154606893190067,
+        0.6197286553618847
+      ],
+      "ZAF": [
+        0.5439030884347333,
+        0.29061690900899156
+      ]
+    },
+    "shift_added": 0.32177334247968503,
+    "reconstruction_err": 0.15952801111501239
+  },
+  "TMLE_DR_aus_bloc": {
+    "ate": 0.005067052404852822,
+    "ci_lo": -0.15310334504563625,
+    "ci_hi": 0.16323744985534186,
+    "n": 19155
+  },
+  "wild_cluster_bootstrap": {
+    "T2_rank_prior": {
+      "beta": -0.013454112263452073,
+      "t": -5.266158398468332,
+      "p_wcb": 0.492
+    },
+    "T4_aus_bloc": {
+      "beta": 0.6163979740515164,
+      "t": 9.019999154845031,
+      "p_wcb": 0.496
+    }
+  },
+  "DFBETAS_aus_bloc": {
+    "beta_full": 0.6163979740515164,
+    "top10_influential": [
+      {
+        "event_code": "2025evt06",
+        "dfbeta": -1.2564467086198592,
+        "n_dropped": 939
+      },
+      {
+        "event_code": "2023evt04",
+        "dfbeta": -0.8127307069208202,
+        "n_dropped": 1067
+      },
+      {
+        "event_code": "2022evt05",
+        "dfbeta": -0.709784200397789,
+        "n_dropped": 776
+      },
+      {
+        "event_code": "2023evt01",
+        "dfbeta": 0.550970097035062,
+        "n_dropped": 752
+      },
+      {
+        "event_code": "2025evt03",
+        "dfbeta": 0.5418336158035815,
+        "n_dropped": 982
+      },
+      {
+        "event_code": "2025evt05",
+        "dfbeta": 0.49517736496704623,
+        "n_dropped": 696
+      },
+      {
+        "event_code": "2022evt04",
+        "dfbeta": 0.4595278052652126,
+        "n_dropped": 784
+      },
+      {
+        "event_code": "2024evt05",
+        "dfbeta": 0.40346277791779966,
+        "n_dropped": 734
+      },
+      {
+        "event_code": "2023evt03",
+        "dfbeta": 0.39254049326571755,
+        "n_dropped": 939
+      },
+      {
+        "event_code": "2023evt09",
+        "dfbeta": 0.35927937419781225,
+        "n_dropped": 604
+      }
+    ]
+  }
+}

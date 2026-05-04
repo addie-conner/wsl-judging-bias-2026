@@ -1,0 +1,462 @@
+{
+  "median_polish": {
+    "grand": 3.7139566822410535,
+    "top_5_over": [
+      {
+        "sid": "3812.0",
+        "effect": 1.3695111304521568,
+        "surfer": "Jackson Baker"
+      },
+      {
+        "sid": "4133.0",
+        "effect": 1.337011130452157,
+        "surfer": "Ethan Ewing"
+      },
+      {
+        "sid": "199.0",
+        "effect": 1.0715179663896568,
+        "surfer": "John John Florence"
+      },
+      {
+        "sid": "2656.0",
+        "effect": 0.9805092004426117,
+        "surfer": "Leo Fioravanti"
+      },
+      {
+        "sid": "Cole Houshmand",
+        "effect": 0.8999994117021564,
+        "surfer": "Cole Houshmand"
+      }
+    ],
+    "bot_5_under": [
+      {
+        "sid": "9112.0",
+        "effect": -0.7997446772198233,
+        "surfer": "Rio Waida"
+      },
+      {
+        "sid": "Jake Marshall",
+        "effect": -0.8370629063946387,
+        "surfer": "Jake Marshall"
+      },
+      {
+        "sid": "1717.0",
+        "effect": -0.957052630782127,
+        "surfer": "Carlos Munoz"
+      },
+      {
+        "sid": "Joel Vaughan",
+        "effect": -0.9798071823760617,
+        "surfer": "Joel Vaughan"
+      },
+      {
+        "sid": "Nadia Erostarbe",
+        "effect": -1.628780578585701,
+        "surfer": "Nadia Erostarbe"
+      }
+    ],
+    "n_surfers": 101,
+    "n_events": 38
+  },
+  "random_forest": {
+    "r2": 0.19180147818551951,
+    "top10": [
+      {
+        "feature": "heat_number",
+        "importance": 0.20023009775740663
+      },
+      {
+        "feature": "wave_position_in_heat",
+        "importance": 0.15828544706387332
+      },
+      {
+        "feature": "rank",
+        "importance": 0.14829871040688528
+      },
+      {
+        "feature": "wave_index_for_surfer",
+        "importance": 0.10598538146146859
+      },
+      {
+        "feature": "ec_AUS",
+        "importance": 0.07662996348367994
+      },
+      {
+        "feature": "year",
+        "importance": 0.07577715093491044
+      },
+      {
+        "feature": "ec_ZAF",
+        "importance": 0.03675496913756233
+      },
+      {
+        "feature": "ec_SLV",
+        "importance": 0.027350807264288138
+      },
+      {
+        "feature": "is_male",
+        "importance": 0.02582173940297061
+      },
+      {
+        "feature": "ec_PYF",
+        "importance": 0.020808476312920755
+      }
+    ]
+  },
+  "doubles": {
+    "rank_x_year": {
+      "coef": -0.0025551813303051956,
+      "p": 0.3278533000174063
+    },
+    "rank_x_is_male": {
+      "coef": 0.0004334771511077954,
+      "p": 0.9591243337329067
+    },
+    "rank_x_home_match": {
+      "coef": -0.0032964702755277097,
+      "p": 0.7020316782272464
+    },
+    "home_match_x_year": {
+      "coef": 0.06030828019516964,
+      "p": 0.25957447814162193
+    },
+    "is_male_x_home_match": {
+      "coef": -0.027780094797969637,
+      "p": 0.8978329727822041
+    },
+    "heat_number_x_rank": {
+      "coef": -7.916547497925363e-06,
+      "p": 0.8382587639172432
+    },
+    "wave_position_in_heat_x_rank": {
+      "coef": 0.0002997418169170292,
+      "p": 0.5429490141778606
+    }
+  },
+  "triples": {
+    "rank_x_is_male_x_home_match": {
+      "coef": 0.017382372399661148,
+      "p": 0.558339595156724
+    },
+    "rank_x_year_x_home_match": {
+      "coef": -0.004883073295955038,
+      "p": 0.32795300252594706
+    },
+    "home_match_x_is_male_x_year": {
+      "coef": -0.0984229915165349,
+      "p": 0.3853585888191382
+    }
+  },
+  "quads": {
+    "rank_x_is_male_x_home_match_x_year": {
+      "coef": -4.2099554594999786e-07,
+      "p": 0.9089353807348755
+    }
+  },
+  "ANOVA": {
+    "one_way_sc": {
+      "sc_eta2": 0.003546076791902462,
+      "sc_F": 6.193101944839101,
+      "sc_p": 2.9022110606713e-10
+    },
+    "two_way": {
+      "C(sc)": {
+        "F": 6.089533553687664,
+        "p": 7.380880196004301e-08,
+        "eta2": 0.0034020971945100055
+      },
+      "C(ec)": {
+        "F": 54.994327577623565,
+        "p": 6.258389381811125e-57,
+        "eta2": 0.022344872817512434
+      },
+      "C(sc):C(ec)": {
+        "F": 1.3675887710903933,
+        "p": 0.020478343623285697,
+        "eta2": 0.006112349828242563
+      },
+      "Residual": {
+        "F": NaN,
+        "p": NaN,
+        "eta2": 0.968140680159735
+      }
+    },
+    "three_way": {
+      "C(sc)": {
+        "F": 0.18981790755673647,
+        "p": 0.9438201425161121,
+        "eta2": 0.0001091847152092763
+      },
+      "C(ec)": {
+        "F": 0.03449254937270716,
+        "p": 0.8526649905629813,
+        "eta2": 1.4429366366099181e-05
+      },
+      "C(gender_str)": {
+        "F": NaN,
+        "p": NaN,
+        "eta2": NaN
+      },
+      "C(sc):C(ec)": {
+        "F": -3.093622044026286,
+        "p": 1.0,
+        "eta2": -0.014235800876318821
+      },
+      "C(sc):C(gender_str)": {
+        "F": 8.758990316496327,
+        "p": 4.6330842964244813e-07,
+        "eta2": 0.005038238359790202
+      },
+      "C(ec):C(gender_str)": {
+        "F": 17.067216230372953,
+        "p": 3.623394732600087e-05,
+        "eta2": 0.0071397771494486955
+      },
+      "C(sc):C(ec):C(gender_str)": {
+        "F": 1.4717773285555074,
+        "p": 0.22508053795598829,
+        "eta2": 0.006772620793821392
+      },
+      "Residual": {
+        "F": NaN,
+        "p": NaN,
+        "eta2": 0.9951615504916831
+      }
+    },
+    "MLM_year_surfer_RE": {
+      "icc_surfer": 7.09394272471184e-33,
+      "cov_re": 4.359126391897492e-32,
+      "scale": 6.144857043618946
+    }
+  },
+  "shapley_r2": {
+    "total_r2": 0.038971589959323705,
+    "per_bucket": {
+      "rank": 0.0017316592935414108,
+      "tempo": 0.005070862341699773,
+      "year": 0.000310727977897865,
+      "gender": 0.0010379752339451005,
+      "geo": 0.030820365112239557
+    }
+  },
+  "multivariate": {
+    "pca_explained_var": [
+      0.25729432080212034,
+      0.20513646752178308,
+      0.1980448524062033,
+      0.19259953238335878,
+      0.14692482688653447
+    ],
+    "pc1_loadings": {
+      "M1_round": 0.32002607339171946,
+      "M2_rank_gap": 0.07367268594184506,
+      "M3_home_match": 0.14239235812985118,
+      "heat_std": 0.6833676435389091,
+      "heat_mean": 0.6363086733700012
+    },
+    "fa_loadings": {
+      "M1_round": {
+        "F1": -0.13332363101168798,
+        "F2": 0.0047042772643903
+      },
+      "M2_rank_gap": {
+        "F1": -0.050282488198838717,
+        "F2": -0.20528752402198255
+      },
+      "M3_home_match": {
+        "F1": -0.06529401362807431,
+        "F2": -0.0743040989211354
+      },
+      "heat_std": {
+        "F1": -0.6245237507254983,
+        "F2": -0.11678284780782962
+      },
+      "heat_mean": {
+        "F1": -0.43404676406535314,
+        "F2": 0.2382042613682033
+      }
+    },
+    "cca": {
+      "r1": 0.11867676456338391,
+      "r2": 0.05168189219059812
+    },
+    "manova_country": {
+      "wilks_lambda": 0.9909391012951535,
+      "F": 3.4119804097390944,
+      "p": 0.000640682200629331
+    }
+  },
+  "robust_T2": {
+    "ols_coef": -0.013454112263452073,
+    "ols_p": 0.00018070701098841163,
+    "huber_coef": -0.014286560112769789,
+    "theilsen_coef": 0.012920689205729833
+  },
+  "nielsen_contribution_matrix": {
+    "grand_mean": 3.516809582570285,
+    "matrix_dev": {
+      "AUS": {
+        "AUS": 0.2960922371965231,
+        "BRA": 0.16299831963447353,
+        "FRA": 0.03702375076304776,
+        "USA": 0.21310711427868245,
+        "ZAF": 0.17144952674145575
+      },
+      "BRA": {
+        "AUS": -0.0605144861190996,
+        "BRA": -0.16968899083867806,
+        "FRA": -0.32077334247968503,
+        "USA": -0.08755952758897889,
+        "ZAF": -0.08917477864871692
+      },
+      "FRA": {
+        "AUS": 0.14766781855965805,
+        "BRA": -0.0065285681768649795,
+        "FRA": 0.09489060024507134,
+        "USA": -0.004746090506793088,
+        "ZAF": 0.36763486187415895
+      },
+      "USA": {
+        "AUS": 0.06124643911552896,
+        "BRA": -0.07386050060927785,
+        "FRA": -0.13362543934777849,
+        "USA": -0.02981313089005111,
+        "ZAF": -0.06188758149443796
+      },
+      "ZAF": {
+        "AUS": 0.12228400622853552,
+        "BRA": -0.07771929529258337,
+        "FRA": -0.029066391908806555,
+        "USA": 0.057816424334202754,
+        "ZAF": 0.14433691424500106
+      }
+    },
+    "matrix_n": {
+      "AUS": {
+        "AUS": 9177,
+        "BRA": 9162,
+        "FRA": 1800,
+        "USA": 5522,
+        "ZAF": 988
+      },
+      "BRA": {
+        "AUS": 13582,
+        "BRA": 15142,
+        "FRA": 2649,
+        "USA": 9094,
+        "ZAF": 1632
+      },
+      "FRA": {
+        "AUS": 1416,
+        "BRA": 1459,
+        "FRA": 547,
+        "USA": 630,
+        "ZAF": 315
+      },
+      "USA": {
+        "AUS": 15494,
+        "BRA": 15849,
+        "FRA": 3128,
+        "USA": 9582,
+        "ZAF": 1859
+      },
+      "ZAF": {
+        "AUS": 2714,
+        "BRA": 2924,
+        "FRA": 514,
+        "USA": 1738,
+        "ZAF": 314
+      }
+    },
+    "diagonal_compatriot": [
+      {
+        "iso": "AUS",
+        "dev": 0.2960922371965231,
+        "n": 9177
+      },
+      {
+        "iso": "USA",
+        "dev": -0.02981313089005111,
+        "n": 9582
+      },
+      {
+        "iso": "BRA",
+        "dev": -0.16968899083867806,
+        "n": 15142
+      },
+      {
+        "iso": "ZAF",
+        "dev": 0.14433691424500106,
+        "n": 314
+      },
+      {
+        "iso": "FRA",
+        "dev": 0.09489060024507134,
+        "n": 547
+      }
+    ]
+  },
+  "chorus_predictions": {
+    "n_predictions": 49,
+    "n_resolved": 0,
+    "mean_p_disputed": 0.6193795918367346,
+    "mean_p_extremized_a1p5": 0.6447757433022875,
+    "ensemble_demo_mean_p": 0.10426760677388917
+  },
+  "bootstrap_top2": {
+    "T2_rank_prior": {
+      "median": -0.013609497253988365,
+      "ci_lo": -0.023897781802849016,
+      "ci_hi": -0.0033338676312439893,
+      "n_boot": 1000
+    },
+    "T4_aus_bloc": {
+      "median": 0.6152485577227846,
+      "ci_lo": 0.49946862045468415,
+      "ci_hi": 0.741357447369334,
+      "n_boot": 1000
+    }
+  },
+  "other_applicable_math_advisory": [
+    {
+      "method": "Hierarchical Bayes (PyMC)",
+      "rationale": "Pool surfer/event REs; recover bias-amplitude posteriors with full uncertainty. HIGH ROI."
+    },
+    {
+      "method": "Change-point detection",
+      "rationale": "Detect 2018\u21922026 structural breaks in panel-composition policy (BIC + ruptures lib). HIGH ROI."
+    },
+    {
+      "method": "Conformal prediction",
+      "rationale": "Distribution-free bands on next-event disputed-prob; tightens 49 SHA-locked priors. HIGH ROI."
+    },
+    {
+      "method": "Latent class analysis",
+      "rationale": "Classify surfers into bias-treatment classes (stars / mid / outsiders) without prior. MED."
+    },
+    {
+      "method": "Copula analysis",
+      "rationale": "Quantify tail dependence between rank and score (Spearman misses tail). MED."
+    },
+    {
+      "method": "Spectral / FFT",
+      "rationale": "Detect periodic round-number patterns across heats / event days. MED."
+    },
+    {
+      "method": "Kernel methods (RBF SVR)",
+      "rationale": "Non-parametric bias surface vs OLS; sensitivity. LOW (RF already covers)."
+    },
+    {
+      "method": "Structural equation model",
+      "rationale": "Path: panel-comp \u2192 score \u2192 seeding \u2192 next-panel. LOW unless we ship a causal-graph figure."
+    },
+    {
+      "method": "Quantile regression forest",
+      "rationale": "Bias amplitude across the score distribution (already preview QuantReg). MED."
+    },
+    {
+      "method": "Survival analysis",
+      "rationale": "Time-to-comeback narrative onset post-low-rank-event. LOW (already explored)."
+    }
+  ]
+}

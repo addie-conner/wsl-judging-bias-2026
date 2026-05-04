@@ -1,0 +1,115 @@
+{
+  "copula": {
+    "kendall_tau": -0.011621282022221305,
+    "p_tau": 0.22856434040353546,
+    "spearman_rho": -0.01662762411543605,
+    "p_spearman": 0.23977959729642417,
+    "upper_tail_dep_0p95": 0.03686635944700461,
+    "lower_tail_dep_0p05": 0.06470588235294118
+  },
+  "GEV_POT": {
+    "gev_shape": -0.23691960754340827,
+    "gev_loc": 2.08677090371995,
+    "gev_scale": 0.5330629920529709,
+    "return_level_100heat": 3.5801649167633194,
+    "pot_threshold_q95": 3.16367920138141,
+    "gpd_shape": -0.0898820192853293,
+    "gpd_scale": 0.24705318062026205,
+    "n_exceed": 108
+  },
+  "transfer_entropy": {
+    "te_round_to_score": 0.519834269916981,
+    "te_score_to_round": 0.44538336027085523
+  },
+  "VAR": {
+    "error": "'mean_score' is not in list"
+  },
+  "e_values": {
+    "t_aus_bloc": 5.997734258895722,
+    "robbins_e": 555677.9048649494,
+    "reject_at_05": true
+  },
+  "perm_importance": [
+    {
+      "feature": "ec_AUS",
+      "in_sample": 0.13887636888597604,
+      "permutation": 0.06225866724942983
+    },
+    {
+      "feature": "heat_number",
+      "in_sample": 0.23536860740385732,
+      "permutation": 0.04734386399915337
+    },
+    {
+      "feature": "wave_index_for_surfer",
+      "in_sample": 0.1530925193143141,
+      "permutation": 0.04617161873718005
+    },
+    {
+      "feature": "rank",
+      "in_sample": 0.16957685888697818,
+      "permutation": 0.04142346886471368
+    },
+    {
+      "feature": "year",
+      "in_sample": 0.09705444472414552,
+      "permutation": 0.03741381316397566
+    },
+    {
+      "feature": "ec_PRT",
+      "in_sample": 0.02593954834825723,
+      "permutation": 0.017564139927079503
+    },
+    {
+      "feature": "ec_SLV",
+      "in_sample": 0.03398006080738537,
+      "permutation": 0.01721839106000371
+    },
+    {
+      "feature": "is_male",
+      "in_sample": 0.031464778301537946,
+      "permutation": 0.01175687006300559
+    },
+    {
+      "feature": "ec_USA",
+      "in_sample": 0.01923247342709691,
+      "permutation": 0.00764202301984411
+    },
+    {
+      "feature": "ec_BRA",
+      "in_sample": 0.01908155637451907,
+      "permutation": 0.00568299673578479
+    },
+    {
+      "feature": "sc_USA",
+      "in_sample": 0.0175775455999379,
+      "permutation": 0.004408708210525428
+    },
+    {
+      "feature": "sc_BRA",
+      "in_sample": 0.015893057150232117,
+      "permutation": 0.003431147706854515
+    }
+  ],
+  "PC_algorithm": {
+    "nodes": [
+      "mean_",
+      "std_",
+      "rank_med",
+      "home_rate",
+      "round_rate"
+    ],
+    "edges_retained": [
+      {
+        "a": "mean_",
+        "b": "std_",
+        "r": 0.23947016443119387
+      },
+      {
+        "a": "std_",
+        "b": "round_rate",
+        "r": 0.08803883499190748
+      }
+    ]
+  }
+}

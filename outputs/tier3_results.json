@@ -1,0 +1,109 @@
+{
+  "BMA_aus_bloc": {
+    "specs": {
+      "S1_no_controls": {
+        "coef": 0.6163979740515164,
+        "se": 0.06833681062158664,
+        "bic": 114965.88578852176
+      },
+      "S2_rank": {
+        "coef": 0.5816033128653284,
+        "se": 0.07016530421384924,
+        "bic": 89105.21037751914
+      },
+      "S3_rank_year": {
+        "coef": 0.5837877713438437,
+        "se": 0.07015379613084802,
+        "bic": 89105.7862211926
+      },
+      "S4_rank_year_gender": {
+        "coef": 0.6339499412211678,
+        "se": 0.07059030597969607,
+        "bic": 89079.90522470183
+      },
+      "S5_heatFE": {
+        "coef": 0.02384074032583315,
+        "se": 0.11062229029492818,
+        "bic": 85176.41046683899
+      }
+    },
+    "weights": {
+      "S1_no_controls": 0.0,
+      "S2_rank": 0.0,
+      "S3_rank_year": 0.0,
+      "S4_rank_year_gender": 0.0,
+      "S5_heatFE": 1.0
+    },
+    "bma_coef": 0.02384074032583315,
+    "bma_se": 0.11062229029492818
+  },
+  "conformal_split": {
+    "half_width_95": 2.173886729761737,
+    "empirical_coverage": 0.9641148325358851,
+    "n_train": 1254,
+    "n_cal": 418,
+    "n_test": 418
+  },
+  "negative_control": {
+    "NC1_birth_year_proxy": {
+      "coef": -0.20069938928799047,
+      "p": 0.06448831823647835
+    },
+    "NC2_heat_number": {
+      "coef": -0.0352273015228588,
+      "p": 0.9956855037520829
+    },
+    "NC3_wave_index": {
+      "coef": -0.08499733927982206,
+      "p": 0.4815902746111539
+    }
+  },
+  "negative_control_summary": {
+    "n_pass": 3,
+    "n_total": 3
+  },
+  "stability_selection": {
+    "B": 100,
+    "alpha": 0.05,
+    "selection_freq": {
+      "rank": 1.0,
+      "ec_PRT": 1.0,
+      "is_male": 1.0,
+      "wave_index_for_surfer": 1.0,
+      "ec_ZAF": 1.0,
+      "ec_AUS": 1.0,
+      "ec_SLV": 1.0,
+      "sc_IDN": 0.97,
+      "ec_BRA": 0.89,
+      "sc_JPN": 0.77,
+      "sc_ITA": 0.66,
+      "ec_USA": 0.2,
+      "ec_FJI": 0.19,
+      "wave_position_in_heat": 0.09,
+      "year": 0.09,
+      "sc_BRA": 0.07,
+      "sc_FRA": 0.06,
+      "sc_CRI": 0.05,
+      "sc_AUS": 0.05,
+      "sc_MAR": 0.0,
+      "sc_ZAF": 0.0,
+      "sc_USA": 0.0,
+      "ec_PYF": 0.0,
+      "home_match": 0.0,
+      "heat_number": 0.0,
+      "ec_IDN": 0.0
+    },
+    "stable_features_at_0p7": [
+      "rank",
+      "ec_PRT",
+      "is_male",
+      "wave_index_for_surfer",
+      "ec_ZAF",
+      "ec_AUS",
+      "ec_SLV",
+      "sc_IDN",
+      "ec_BRA",
+      "sc_JPN"
+    ]
+  }
+}

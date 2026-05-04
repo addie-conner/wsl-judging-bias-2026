@@ -1,0 +1,25 @@
+{
+  "holdout_strategy": "2025 women's CT only",
+  "rationale": "Temporally late + gender-discrete; allows replication of effects discovered on training data. Locked at this commit and not used for any exploratory or hypothesis-discovery analysis.",
+  "training_rows": 23086,
+  "holdout_rows": 1815,
+  "training_years": [
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "holdout_years": [
+    2025
+  ],
+  "training_genders": [
+    "m",
+    "w"
+  ],
+  "holdout_genders": [
+    "w"
+  ],
+  "training_sha256": "9f3a928ee7a058645873bbae1d45030a",
+  "holdout_sha256": "c7130018b373836efd3b8542e9380a22",
+  "locked_at": "2026-05-03"
+}

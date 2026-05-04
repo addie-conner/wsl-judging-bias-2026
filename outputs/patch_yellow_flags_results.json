@@ -1,0 +1,27 @@
+{
+  "wild_cluster_bootstrap_corrected": {
+    "T2_rank_prior": {
+      "beta": -0.013454112263452073,
+      "t": -5.266158398468332,
+      "p_wcb": 0.0,
+      "B": 999
+    },
+    "T4_aus_bloc": {
+      "beta": 0.6163979740515164,
+      "t": 9.019999154845031,
+      "p_wcb": 0.0,
+      "B": 999
+    },
+    "method": "Cameron-Gelbach-Miller restricted-residuals wild cluster bootstrap"
+  },
+  "VAR_corrected": {
+    "n_events": 38,
+    "lag_bic": null,
+    "var2_aic": -11.810502054807774,
+    "var2_bic": -10.88678267404171,
+    "granger_round_to_score_p": 0.5943761360726998,
+    "granger_score_to_round_p": 0.6478256848808317,
+    "granger_round_to_score_F": 0.5233663240943989,
+    "granger_score_to_round_F": 0.4363071932800564
+  }
+}

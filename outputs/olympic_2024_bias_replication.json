@@ -1,0 +1,402 @@
+{
+  "report_date": "2026-05-03",
+  "data_sha256": "25f500d8c76998c1b777153b22b5da478edcba1dfc079fa1bc272f8a2dfe9c90",
+  "wsl_training_sha256": "7f07fb121abed1a2fd8da2e3c12c176187639b9482148decce7ce917eb0199f0",
+  "n_tests_bonferroni": 6,
+  "alpha": 0.05,
+  "wsl_training_findings": {
+    "O1_home_country": {
+      "name": "Test 4 \u2014 Home-country / venue advantage",
+      "estimate": 0.07005767967614915,
+      "p_bonferroni": 1.0,
+      "verdict": "no evidence of bias",
+      "n": null,
+      "wsl_panel": "WSL CT panel, 2022-2025, n=24,901"
+    },
+    "O2_round_number": {
+      "name": "H11 \u2014 Round-number bias",
+      "estimate": 3.4067,
+      "p_bonferroni": 0.0,
+      "verdict": "supports",
+      "n": 24900,
+      "wsl_panel": "WSL CT panel, 2022-2025",
+      "interpretation": "3.41\u00d7 excess of .00/.25/.50/.75 endings vs trim-mean Monte-Carlo null"
+    },
+    "O3_comeback": {
+      "name": "H7 \u2014 Comeback-narrative bias",
+      "estimate": -0.014815660014969064,
+      "p_bonferroni": 8.18592e-05,
+      "verdict": "supports",
+      "n": 22755,
+      "wsl_panel": "WSL CT panel, 2022-2025",
+      "interpretation": "each 1pt heat-deficit \u2192 +0.0148 residual score for the trailing surfer"
+    },
+    "O4_day_amplification": {
+      "name": "H17 \u2014 Day-of-event amplification",
+      "estimate": 1.1698237628,
+      "p_bonferroni": 9.9085e-12,
+      "verdict": "supports",
+      "n": 57,
+      "wsl_panel": "WSL CT panel, 2022-2025; per-event endpoint slopes",
+      "interpretation": "residual variance grows +1.17 units per competition day moving toward the final"
+    },
+    "O5_reputation": {
+      "name": "Test 2 \u2014 Reputation prior (load-bearing)",
+      "estimate": -0.005810424,
+      "p_bonferroni": 0.000707,
+      "verdict": "supports",
+      "n": 19151,
+      "wsl_panel": "WSL CT panel, 2022-2025",
+      "interpretation": "each rank-position deeper \u2192 -0.0058 score points after wave-quality + heat-FE controls (better surfers favored)"
+    },
+    "O6_lowe_removal": {
+      "name": "Benjamin Lowe panel-removal natural experiment",
+      "estimate": null,
+      "p_bonferroni": null,
+      "verdict": "novel \u2014 no WSL analog",
+      "n": null,
+      "wsl_panel": "n/a (Olympic-specific incident)"
+    }
+  },
+  "olympic_results": [
+    {
+      "test_id": "O1",
+      "name": "Compatriot home-country effect at Olympics",
+      "method_citation": "Zitzewitz 2011 nationality-bias regression \u2014 ports bias_tests::test_4_home_country.",
+      "estimate": -0.021921984299621222,
+      "confidence_interval": [
+        -0.3509877918784075,
+        0.30714382327916506
+      ],
+      "p_value_raw": 0.8961150500310417,
+      "p_value_bonferroni": 1.0,
+      "n": 285,
+      "verdict": "null",
+      "replication_verdict": "REPLICATES (both null)",
+      "detail": {
+        "coef_FRA_host_match_pts": -0.021921984299621222,
+        "ci_95": [
+          -0.3509877918784075,
+          0.30714382327916506
+        ],
+        "p_raw": 0.8961150500310417,
+        "n_FRA_waves": 34,
+        "n_FRA_surfers": 4,
+        "regional_bloc_breakdown_within_heat": {
+          "BRA": {
+            "n_heats_with_country": 18,
+            "mean_diff_pts": 1.1232407407407408,
+            "se": 0.4900816688684625,
+            "t_stat": 2.2919460410224355,
+            "p_value": 0.03494404777074426
+          },
+          "AUS": {
+            "n_heats_with_country": 12,
+            "mean_diff_pts": 0.5918749999999999,
+            "se": 0.5461685697054444,
+            "t_stat": 1.083685574069569,
+            "p_value": 0.3016858017397231
+          },
+          "USA": {
+            "n_heats_with_country": 14,
+            "mean_diff_pts": 0.7348214285714286,
+            "se": 0.7155994117881116,
+            "t_stat": 1.0268614206030242,
+            "p_value": 0.32321407845411076
+          },
+          "JPN": {
+            "n_heats_with_country": 12,
+            "mean_diff_pts": 0.33145833333333335,
+            "se": 0.7217772846978546,
+            "t_stat": 0.45922522135354554,
+            "p_value": 0.6550143537043516
+          },
+          "FRA": {
+            "n_heats_with_country": 13,
+            "mean_diff_pts": 1.2338461538461538,
+            "se": 0.41844680138784196,
+            "t_stat": 2.94863325458318,
+            "p_value": 0.012175102061194968
+          },
+          "PER": {
+            "n_heats_with_country": 9,
+            "mean_diff_pts": -0.6384259259259258,
+            "se": 0.660627455618216,
+            "t_stat": -0.9663932682429707,
+            "p_value": 0.3621494569836793
+          }
+        },
+        "interpretation": "FRA surfers score -0.022 pts higher than non-FRA controlling for wave-quality proxy + surfer FE"
+      }
+    },
+    {
+      "test_id": "O2",
+      "name": "Round-number bias at Olympics (.00/.25/.50/.75 clustering)",
+      "method_citation": "Same Monte-Carlo trim-mean null as h7_h14::test_h11.",
+      "estimate": 3.995904198196848,
+      "confidence_interval": [
+        3.240231512364638,
+        4.825368656606399
+      ],
+      "p_value_raw": 0.0,
+      "p_value_bonferroni": 0.0,
+      "n": 285,
+      "verdict": "supports",
+      "replication_verdict": "REPLICATES",
+      "detail": {
+        "p_round_observed_pct": 26.666666666666668,
+        "p_round_expected_under_null_pct": 6.673500000000001,
+        "excess_ratio": 3.995904198196848,
+        "excess_95ci": [
+          3.240231512364638,
+          4.825368656606399
+        ],
+        "n_round": 76,
+        "n_total": 285,
+        "binom_z_vs_trim_mean_null": 13.524608256403818,
+        "binom_p_vs_trim_mean_null": 0.0,
+        "chi2_uniform_naive_stat": 2060.614035087719,
+        "chi2_uniform_naive_p": 0.0,
+        "monte_carlo_null": {
+          "n_sim": 200000,
+          "p_round_under_null": 0.066735,
+          "p_uniform_naive": 0.04
+        }
+      }
+    },
+    {
+      "test_id": "O3",
+      "name": "Comeback-narrative bias at Olympics",
+      "method_citation": "Heat-deficit regression on residual score, ports h7_h14::test_h7_comeback_bias.",
+      "estimate": -0.01954368416985352,
+      "confidence_interval": [
+        -0.12327672186238858,
+        0.08418935352268153
+      ],
+      "p_value_raw": 0.711925606782547,
+      "p_value_bonferroni": 1.0,
+      "n": 221,
+      "verdict": "null",
+      "replication_verdict": "PARTIAL-DIRECTIONAL",
+      "detail": {
+        "n_heats": 64,
+        "n_surfers": 48,
+        "se": 0.05292501923088523,
+        "coef_sign_supports_comeback_bias": true,
+        "deficit_distribution": {
+          "min": -14.23,
+          "p25": -7.17,
+          "median": -4.17,
+          "p75": -0.97,
+          "max": 6.57
+        },
+        "interpretation": "each 1pt heat-deficit \u2192 -0.0195 residual score points"
+      }
+    },
+    {
+      "test_id": "O4",
+      "name": "Day-of-event amplification at Olympics",
+      "method_citation": "Per-event endpoint slope of residual variance across competition days; ports h17_h28::test_h17.",
+      "estimate": -0.3986830754653129,
+      "confidence_interval": null,
+      "p_value_raw": 0.1579451665048632,
+      "p_value_bonferroni": 0.9476709990291792,
+      "n": 14,
+      "verdict": "null",
+      "replication_verdict": "FAILED (opposite sign)",
+      "detail": {
+        "primary_test": "Spearman across event-day cells",
+        "spearman_rho": -0.3986830754653129,
+        "spearman_p": 0.1579451665048632,
+        "n_event_day_cells": 14,
+        "n_underlying_waves": 285,
+        "per_event_endpoint_slopes": [
+          {
+            "event_uid": "olympics2024|m",
+            "slope": -0.33161772971011905,
+            "n_days": 7
+          },
+          {
+            "event_uid": "olympics2024|w",
+            "slope": 0.012841747315799864,
+            "n_days": 7
+          }
+        ],
+        "endpoint_slope_t_stat": -0.9254382696816694,
+        "endpoint_slope_p_value": 0.5246405021624243,
+        "endpoint_slope_mean": -0.1593879911971596,
+        "endpoint_slope_se": 0.17222973851295945,
+        "robustness_within_FE": {
+          "coef": null,
+          "p_value": null
+        },
+        "variance_by_round_day": [
+          {
+            "event_uid": "olympics2024|m",
+            "event_day_index": 1.0,
+            "residual_variance": 2.7788344162160246,
+            "n_waves": 47
+          },
+          {
+            "event_uid": "olympics2024|m",
+            "event_day_index": 2.0,
+            "residual_variance": 2.9767226050969735,
+            "n_waves": 32
+          },
+          {
+            "event_uid": "olympics2024|m",
+            "event_day_index": 3.0,
+            "residual_variance": 2.511852216564471,
+            "n_waves": 32
+          },
+          {
+            "event_uid": "olympics2024|m",
+            "event_day_index": 4.0,
+            "residual_variance": 2.517961509075604,
+            "n_waves": 16
+          },
+          {
+            "event_uid": "olympics2024|m",
+            "event_day_index": 5.0,
+            "residual_variance": 1.3484007293716385,
+            "n_waves": 7
+          },
+          {
+            "event_uid": "olympics2024|m",
+            "event_day_index": 6.0,
+            "residual_variance": 0.273711814814815,
+            "n_waves": 4
+          },
+          {
+            "event_uid": "olympics2024|m",
+            "event_day_index": 7.0,
+            "residual_variance": 0.7891280379553104,
+            "n_waves": 3
+          },
+          {
+            "event_uid": "olympics2024|w",
+            "event_day_index": 1.0,
+            "residual_variance": 3.5954661827718675,
+            "n_waves": 48
+          },
+          {
+            "event_uid": "olympics2024|w",
+            "event_day_index": 2.0,
+            "residual_variance": 2.1476632616487454,
+            "n_waves": 32
+          },
+          {
+            "event_uid": "olympics2024|w",
+            "event_day_index": 3.0,
+            "residual_variance": 1.6044010500672041,
+            "n_waves": 32
+          },
+          {
+            "event_uid": "olympics2024|w",
+            "event_day_index": 4.0,
+            "residual_variance": 1.1433633333333328,
+            "n_waves": 16
+          },
+          {
+            "event_uid": "olympics2024|w",
+            "event_day_index": 5.0,
+            "residual_variance": 1.2956880952380951,
+            "n_waves": 8
+          },
+          {
+            "event_uid": "olympics2024|w",
+            "event_day_index": 6.0,
+            "residual_variance": 2.7288759259259265,
+            "n_waves": 4
+          },
+          {
+            "event_uid": "olympics2024|w",
+            "event_day_index": 7.0,
+            "residual_variance": 3.6725166666666667,
+            "n_waves": 4
+          }
+        ],
+        "interpretation": "residual variance Spearman vs round-day = -0.399, p=0.1579; positive \u21d2 widens toward medal day"
+      }
+    },
+    {
+      "test_id": "O5",
+      "name": "Reputation prior at Olympics (pre-Oly CT rank effect)",
+      "method_citation": "Findlay & Ste-Marie 2004 reputation regression with leave-one-out heat mean as wave-quality proxy + heat FE; ports bias_tests::test_2.",
+      "estimate": 0.6296296296296297,
+      "confidence_interval": [
+        -0.050617917924867493,
+        0.001925887775024747
+      ],
+      "p_value_raw": 0.004528991668766285,
+      "p_value_bonferroni": 0.02717395001259771,
+      "n": 108,
+      "verdict": "supports",
+      "replication_verdict": "REPLICATES",
+      "detail": {
+        "n_olympic_waves_with_matched_pre_oly_CT_rank": 149,
+        "n_olympic_surfers_with_matched_rank": 23,
+        "n_olympic_surfers_total": 48,
+        "match_rate": 0.4791666666666667,
+        "findlay_regression": {
+          "coef": -0.024346015074921373,
+          "p_value": 0.06932637528321361,
+          "ci_95": [
+            -0.050617917924867493,
+            0.001925887775024747
+          ],
+          "n": 148
+        },
+        "within_heat_sign_test": {
+          "n_pairs": 108,
+          "higher_ranked_won": 68,
+          "win_rate": 0.6296296296296297,
+          "p_value": 0.004528991668766285
+        },
+        "primary_test": "within-heat sign test (Zitzewitz 2011)",
+        "interpretation": "Within-heat sign test (Zitzewitz 2011 primary): higher-ranked surfer wins 62.96% of pair comparisons across 108 same-heat pairs (p=0.0045, raw). Secondary Findlay regression coef = -0.02435 pts/rank-position (p=0.0693)."
+      }
+    },
+    {
+      "test_id": "O6",
+      "name": "Benjamin Lowe panel-removal pre/post (Aug 1 2024)",
+      "method_citation": "Difference-in-differences-flavored pre/post within-surfer comparison + AUS-bloc subgroup test. Novel Olympic-specific incident; no WSL training-data analog.",
+      "estimate": 0.6603602684316987,
+      "confidence_interval": [
+        -1.0774003358778537,
+        2.3981208727412513
+      ],
+      "p_value_raw": 0.45639324557484784,
+      "p_value_bonferroni": 1.0,
+      "n": 285,
+      "verdict": "null",
+      "replication_verdict": "NOVEL (no WSL analog)",
+      "detail": {
+        "pre_n": 159,
+        "post_n": 126,
+        "pre_mean": 4.771132075471698,
+        "post_mean": 5.251587301587302,
+        "overall_post_minus_pre": 0.48045522611560365,
+        "overall_t_stat": 1.7240172068020765,
+        "overall_p_value": 0.08584154739850583,
+        "aus_block_pre_post": {
+          "n_pre": 12,
+          "n_post": 15,
+          "mean_pre": 5.160833333333333,
+          "mean_post": 6.204666666666666,
+          "diff_post_minus_pre": 1.0438333333333336,
+          "t_stat": 1.1381456824119522,
+          "p_value": 0.2685814414453377
+        },
+        "did_aus_x_post_estimate": 0.6603602684316987,
+        "did_aus_x_post_p_value": 0.45639324557484784,
+        "did_aus_x_post_ci95": [
+          -1.0774003358778537,
+          2.3981208727412513
+        ],
+        "interpretation": "DiD = (AUS post - AUS pre) - (non-AUS post - non-AUS pre). Hypothesis: NEGATIVE DiD = AUS scoring dropped after their compatriot judge was removed (compatriot-judge effect). Observed DiD=+0.660 is positive \u2014 i.e. AUS scores went UP after Lowe was removed \u2014 *opposite* direction to the compatriot-judge story. Most likely explanation: survival selection \u2014 only the strongest 3 AUS surfers (Robinson, Ewing, Wright) advanced past Round 2, and they were riding cleaner waves post-weather-hold. The compatriot-judge hypothesis is NOT supported by this natural experiment.",
+        "important_caveat": "Round number is a coarse proxy for date. Round 1-2 ran Jul 27-28 (pre-Lowe-removal); Round 3-7 spanned Aug 1-5 (post-removal). Confounded by the weather hold (Jul 29-31) which selects on wave conditions."
+      }
+    }
+  ]
+}

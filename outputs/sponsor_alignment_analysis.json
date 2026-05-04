@@ -1,0 +1,18 @@
+{
+  "n_wave_rows_tested": 8992,
+  "naive_diff": 0.10788633492995503,
+  "heat_FE_coef": 0.2790519329276206,
+  "heat_FE_se": 0.10672278307032199,
+  "heat_FE_p": 0.008929637293068613,
+  "heat_FE_ci": [
+    0.06987912177990849,
+    0.4882247440753327
+  ],
+  "n_surfers_within_test": 30,
+  "within_surfer_mean_diff": 0.1009,
+  "within_surfer_p": 0.4825,
+  "within_surfer_pos_count": 17,
+  "n_surfers_with_sponsor_data": 39,
+  "n_events_with_parsed_sponsor": 18267,
+  "interpretation": "No statistically significant effect of athlete-sponsor / event-sponsor alignment on wave scores under heat-FE OLS or within-surfer paired t-test. Point estimate is small positive (~+0.1 pts) but confidence interval crosses zero. Per-event variation is large (-0.6 to +0.5 across events)."
+}
