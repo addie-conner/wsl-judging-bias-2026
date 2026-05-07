@@ -1,0 +1,238 @@
+{
+  "preregistration_commit_sha_at_seal": "c0d1e1a",
+  "preregistration_path": "outputs/preregistration_time_pressure_2026-05-07.md",
+  "discovery_sample_size": 34904,
+  "holdout_sample_size": 14106,
+  "anchoring_baseline_share_in_corpus": 0.3139767394409304,
+  "primary_confirmatory_holdout": {
+    "H1_wave_density": {
+      "n": 12273,
+      "coef": 0.021494280703465964,
+      "se": 0.017292553371482333,
+      "z": 1.2429790003662977,
+      "p": 0.2138755719224572,
+      "direction_predicted": "negative",
+      "direction_observed": "positive"
+    },
+    "H2_fatigue": {
+      "n": 14106,
+      "coef": 0.0036270857083673877,
+      "se": 0.0015094376851259815,
+      "z": 2.4029383551959365,
+      "p": 0.016263928826565372,
+      "direction_predicted": "positive",
+      "direction_observed": "positive"
+    },
+    "H3_end_of_heat": {
+      "n_eoh": 3003,
+      "n_mid": 11103,
+      "p_eoh": 0.23576423576423577,
+      "p_mid": 0.33063136089345224,
+      "diff_pct_pts": -9.486712512921647,
+      "z": -9.968701345445924,
+      "p": 0.0,
+      "direction_predicted": "positive (more anchoring at end)",
+      "direction_observed": "negative"
+    }
+  },
+  "primary_replication_on_discovery_sample_for_comparison": {
+    "H1_wave_density": {
+      "n": 30336,
+      "coef": -0.046379619764699044,
+      "se": 0.010832267986758527,
+      "z": -4.281616723422459,
+      "p": 1.855403567472613e-05,
+      "direction_predicted": "negative",
+      "direction_observed": "negative"
+    },
+    "H2_fatigue": {
+      "n": 34904,
+      "coef": 0.0028418154754110093,
+      "se": 0.0009277005231663328,
+      "z": 3.0632897195224325,
+      "p": 0.00218918001004035,
+      "direction_predicted": "positive",
+      "direction_observed": "positive"
+    },
+    "H3_end_of_heat": {
+      "n_eoh": 6787,
+      "n_mid": 28117,
+      "p_eoh": 0.2422277884190364,
+      "p_mid": 0.3330725184052353,
+      "diff_pct_pts": -9.084472998619889,
+      "z": -14.455506061997605,
+      "p": 0.0,
+      "direction_predicted": "positive (more anchoring at end)",
+      "direction_observed": "negative"
+    }
+  },
+  "bh_fdr_q0p05_results": {
+    "H1_wave_density": {
+      "rank": 3,
+      "p": 0.2138755719224572,
+      "fdr_threshold": 0.05,
+      "rejects_null": false
+    },
+    "H2_fatigue": {
+      "rank": 2,
+      "p": 0.016263928826565372,
+      "fdr_threshold": 0.03333333333333333,
+      "rejects_null": true
+    },
+    "H3_end_of_heat": {
+      "rank": 1,
+      "p": 0.0,
+      "fdr_threshold": 0.016666666666666666,
+      "rejects_null": true
+    }
+  },
+  "h4_magnitude_bound": {
+    "anchoring_baseline_share": 0.3139767394409304,
+    "anchoring_excess_over_uniform_pp": 21.39767394409304,
+    "magnitude_threshold_pp": 5.34941848602326,
+    "max_predicted_direction_shift_pp_holdout": null,
+    "claim_supported": null
+  },
+  "sensitivity_S1_eoh_threshold_sweep": {
+    "threshold_60s": {
+      "n_eoh": 7291,
+      "p_eoh": 0.24221643121656838,
+      "p_mid": 0.3265178935257317,
+      "diff_pp": -8.43014623091633
+    },
+    "threshold_120s": {
+      "n_eoh": 8471,
+      "p_eoh": 0.240585527092433,
+      "p_mid": 0.3293125138755273,
+      "diff_pp": -8.87269867830943
+    },
+    "threshold_180s": {
+      "n_eoh": 9790,
+      "p_eoh": 0.24024514811031664,
+      "p_mid": 0.3323814380418154,
+      "diff_pp": -9.213628993149877
+    },
+    "threshold_300s": {
+      "n_eoh": 12503,
+      "p_eoh": 0.24250179956810367,
+      "p_mid": 0.3384556386446435,
+      "diff_pp": -9.595383907653984
+    }
+  },
+  "sensitivity_S2_wave_density_alt": {
+    "a_log_gap": {
+      "coef": -0.026626032830533185,
+      "p": 0.0036890769547057107
+    },
+    "b_log_mean_gap_per_heat": {
+      "coef": 0.18116618037817872,
+      "p": 4.0006187352439484e-13
+    }
+  },
+  "sensitivity_S3_fatigue_alt": {
+    "a_heat_seq": "see primary H2",
+    "b_heat_position_within_day": "no explicit day field \u2014 not testable in this corpus",
+    "c_days_since_event_start": "no explicit day field \u2014 not testable"
+  },
+  "sensitivity_S4_fixed_effects": {
+    "no_FE": {
+      "n": 42609,
+      "log_gap": {
+        "coef": -0.016974445868204728,
+        "p": 0.0696360795834731
+      },
+      "heat_seq": {
+        "coef": 0.003530404246831575,
+        "p": 4.189101534504042e-05
+      },
+      "end_of_heat": {
+        "coef": -0.39259385693678994,
+        "p": 5.329317712911085e-48
+      },
+      "pseudo_r2": 0.00468926612870213
+    },
+    "judge_nat_FE": {
+      "n": 42609,
+      "log_gap": {
+        "coef": -0.017741652811345106,
+        "p": 0.05812411036667984
+      },
+      "heat_seq": {
+        "coef": 0.003618511332669915,
+        "p": 2.8793094761932693e-05
+      },
+      "end_of_heat": {
+        "coef": -0.39286652904686176,
+        "p": 4.9669030750637e-48
+      },
+      "pseudo_r2": 0.0051499947701604265
+    },
+    "event_FE": {
+      "n": 42609,
+      "log_gap": {
+        "coef": -0.01801936949372197,
+        "p": 0.055473322786898406
+      },
+      "heat_seq": {
+        "coef": 0.0041920762044668596,
+        "p": 4.282319212678265e-06
+      },
+      "end_of_heat": {
+        "coef": -0.39971693333499486,
+        "p": 1.9872870137732207e-49
+      },
+      "pseudo_r2": 0.006875904014118195
+    },
+    "judge_nat_AND_event_FE": {
+      "n": 42609,
+      "log_gap": {
+        "coef": -0.018216986546715056,
+        "p": 0.05291080644390138
+      },
+      "heat_seq": {
+        "coef": 0.004217219823677514,
+        "p": 3.7873161396183763e-06
+      },
+      "end_of_heat": {
+        "coef": -0.3998432106295129,
+        "p": 1.94328451669979e-49
+      },
+      "pseudo_r2": 0.007218447656613947
+    }
+  },
+  "sensitivity_S5_outlier_robustness": {
+    "n_heats_total": 1064,
+    "n_heats_dropped": 24,
+    "primary_redo": {
+      "H1_wave_density": {
+        "n": 42504,
+        "coef": -0.026898599369563334,
+        "se": 0.009187524004087497,
+        "z": -2.927731057638189,
+        "p": 0.003414452524470909,
+        "direction_predicted": "negative",
+        "direction_observed": "negative"
+      },
+      "H2_fatigue": {
+        "n": 48760,
+        "coef": 0.002938045908096879,
+        "se": 0.0007912064116756108,
+        "z": 3.7133747461357247,
+        "p": 0.00020451370532419027,
+        "direction_predicted": "positive",
+        "direction_observed": "positive"
+      },
+      "H3_end_of_heat": {
+        "n_eoh": 9625,
+        "n_mid": 39135,
+        "p_eoh": 0.24041558441558442,
+        "p_mid": 0.3320301520378178,
+        "diff_pct_pts": -9.161456762223342,
+        "z": -17.350386437541527,
+        "p": 0.0,
+        "direction_predicted": "positive (more anchoring at end)",
+        "direction_observed": "negative"
+      }
+    }
+  }
+}

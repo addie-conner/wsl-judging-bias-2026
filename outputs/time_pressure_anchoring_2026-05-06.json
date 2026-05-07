@@ -1,0 +1,142 @@
+{
+  "baseline": {
+    "n_judge_scores": 49010,
+    "p_whole_anchor": 0.3139767394409304,
+    "uniform_null_p_whole": 0.1,
+    "p_half_anchor": 0.6703325851866966,
+    "uniform_null_p_half": 0.2,
+    "whole_excess_pct": 213.97673944093037,
+    "half_excess_pct": 235.1662925933483,
+    "last_digit_chi2": 73544.7320954907,
+    "last_digit_chi2_p": 0.0,
+    "last_digit_distribution": [
+      15388,
+      170,
+      3255,
+      3623,
+      342,
+      17465,
+      315,
+      3228,
+      4935,
+      289
+    ]
+  },
+  "bullet_1_4_wave_density": [
+    {
+      "density_q": "Q1_fast",
+      "n": 10688,
+      "p_whole": 0.3101609281437126,
+      "p_half": 0.6651384730538922,
+      "median_gap_sec": 24.0
+    },
+    {
+      "density_q": "Q2",
+      "n": 10703,
+      "p_whole": 0.2995421844342708,
+      "p_half": 0.6387928618144445,
+      "median_gap_sec": 109.0
+    },
+    {
+      "density_q": "Q3",
+      "n": 10611,
+      "p_whole": 0.29346904156064463,
+      "p_half": 0.6222787673169352,
+      "median_gap_sec": 214.0
+    },
+    {
+      "density_q": "Q4_slow",
+      "n": 10607,
+      "p_whole": 0.29829357971151127,
+      "p_half": 0.6336381634769492,
+      "median_gap_sec": 425.0
+    }
+  ],
+  "bullet_1_4_logit_log_gap": {
+    "coef_log_gap": -0.02593129496113399,
+    "se": 0.009162511405972625,
+    "z": -2.8301514521696043,
+    "p": 0.004652597426369418,
+    "interpretation": "negative coef = more anchoring when gap is short (time pressure)"
+  },
+  "bullet_2_end_of_heat": [
+    {
+      "end_of_heat": 0,
+      "n": 39220,
+      "p_whole": 0.3323814380418154,
+      "p_half": 0.7081845996940337
+    },
+    {
+      "end_of_heat": 1,
+      "n": 9790,
+      "p_whole": 0.24024514811031664,
+      "p_half": 0.5186925434116445
+    }
+  ],
+  "bullet_2_z_test": {
+    "diff_pct_pts": -9.213628993149877,
+    "z": -17.571763586148858,
+    "p_two_sided": 0.0,
+    "n_eoh": 9790,
+    "n_mid": 39220
+  },
+  "bullet_3_fatigue": [
+    {
+      "fatigue_q": "Q1_fresh",
+      "n": 13230,
+      "p_whole": 0.30468631897203324,
+      "p_half": 0.6426303854875284,
+      "median_heat_seq": 3.0
+    },
+    {
+      "fatigue_q": "Q2",
+      "n": 12102,
+      "p_whole": 0.30507354156337796,
+      "p_half": 0.6559246405552801,
+      "median_heat_seq": 12.0
+    },
+    {
+      "fatigue_q": "Q3",
+      "n": 11885,
+      "p_whole": 0.3240218763146824,
+      "p_half": 0.690534286916281,
+      "median_heat_seq": 21.0
+    },
+    {
+      "fatigue_q": "Q4_late",
+      "n": 11793,
+      "p_whole": 0.32341219367421353,
+      "p_half": 0.6958365131857882,
+      "median_heat_seq": 35.0
+    }
+  ],
+  "bullet_3_logit_heat_seq": {
+    "coef_heat_seq": 0.002890068794774491,
+    "se": 0.0007851671918659944,
+    "z": 3.6808323433714527,
+    "p": 0.00023247383253899076,
+    "interpretation": "positive coef = more anchoring later in the event-day"
+  },
+  "combined_model": {
+    "log_gap": {
+      "coef": -0.017741652811345144,
+      "se": 0.009363532133391923,
+      "z": -1.894760711940683,
+      "p": 0.05812411036667924
+    },
+    "end_of_heat": {
+      "coef": -0.3928665290468617,
+      "se": 0.026980595429000515,
+      "z": -14.561077055570944,
+      "p": 4.9669030750638406e-48
+    },
+    "heat_seq": {
+      "coef": 0.0036185113326699142,
+      "se": 0.0008650914901823602,
+      "z": 4.18280768419897,
+      "p": 2.879309476193285e-05
+    },
+    "n": 42609,
+    "pseudo_r2": 0.0051499947701603155
+  }
+}
