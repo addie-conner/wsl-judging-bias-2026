@@ -29,7 +29,7 @@ Heiniger and Mercier laid this out cleanly in their 2021 paper on Olympic gymnas
 
 ---
 
-I pulled the WSL data myself and replicated the Santos result on a substantially larger sample. For context: Santos worked with 4,095 hand-scraped waves from the 2021 men's tour. The other peer-reviewed paper on WSL judging — published in the *International Journal of Sport Finance* in 2025 — used 21,013 men's waves from 2017 to 2022. The dataset I'm working with goes from 2009 to 2026, men's and women's tour combined, and contains **60,834 panel-trim-mean wave scores along with 301,478 individual judge-scoring decisions**, with judge nationality known on about 86 percent of them. Roughly 15× the size of Santos and 3× the size of IJSF at the panel level. The per-judge layer — what each individual judge gave each wave, with their nationality attached — is, as best I can tell, the largest publicly-available WSL per-judge dataset that exists outside the WSL itself.
+I pulled the WSL data myself and replicated the Santos result on a substantially larger sample. For context: Santos worked with 4,095 hand-scraped waves from the 2021 men's tour. A second peer-reviewed paper — Naumann and Rösch, published in the *International Journal of Sport Finance* in 2026 — analyzed 21,013 men's waves from 2017 to 2022. The dataset I'm working with goes from 2009 to 2026, men's and women's tour combined, and contains **60,834 panel-trim-mean wave scores along with 301,478 individual judge-scoring decisions**, with judge nationality known on about 86 percent of them. Roughly 15× the size of Santos and 3× the size of IJSF at the panel level. The per-judge layer — what each individual judge gave each wave, with their nationality attached — is, as best I can tell, the largest publicly-available WSL per-judge dataset that exists outside the WSL itself.
 
 The reliability finding replicates cleanly. The inter-judge agreement in this dataset is, in psychometric terms, "near ceiling." The comparison to figure-skating and gymnastics reliability benchmarks is approximate — different sports use differently-constructed scales — but in absolute terms, surf judging exhibits one of the tightest inter-judge agreements in any subjective-sport corpus that has been examined.
 
@@ -41,11 +41,11 @@ The tests were pre-registered. We sealed our hypotheses, our specifications, and
 
 The reputation prior — judges scoring better-ranked surfers higher even controlling for the wave they actually surfed — replicated cleanly: β = −0.013 per rank position, p = 1.8 × 10⁻⁴. It survives multiple-comparisons correction. The Findlay–Ste-Marie effect from figure skating, in surfing, twenty-two years later, on a much larger dataset.
 
-Round-number anchoring: 59.9 percent of individual judge-scores end in .0/.25/.5/.75 against a uniform null of 20 percent. That's a 3.0× clustering ratio across 301,478 individual judging decisions. Bulletproof.
+Round-number anchoring: 59.9 percent of individual judge-scores end in .0 or .5 against a uniform null of 20 percent. That's a 3.0× clustering ratio across 301,478 individual judging decisions. Bulletproof.
 
 A descriptive home-event effect: AUS surfers at AUS events score +0.616 points higher than the rest of the field. PRT surfers at PRT events: +0.43. ZAF: +0.43. All highly significant by conventional tests.
 
-A daily amplification effect: scores rise by +1.17 points per event-day, controlling for surfer skill, controlling for venue. Day 1 of a contest, the same surfer rides what is probably an objectively similar wave to Day 5; the Day-5 score is higher by more than a full point on average. *p* = 9.9 × 10⁻¹².
+A daily amplification effect: scores rise by +1.17 points per event-day in the training data, controlling for surfer skill and venue — though this one failed to replicate at the Paris 2024 Olympic event, where the sign reversed, so treat it as descriptive rather than settled.
 
 A panel-composition effect: in 2018, the average Brazilian Championship Tour competitor faced a panel containing 1.72 Brazilian judges. By 2026, that number had fallen to 0.84 — a slope a thousand random shuffles of the year labels never reproduce.
 
@@ -63,7 +63,7 @@ This is the methodological lesson of the entire cross-sport judging literature f
 
 What is to be done with this?
 
-The most honest answer is that the *first* problem in pro-surf-judging accountability is that the most-cited defense of the system — high inter-judge correlation — is half of the necessary evidence and not the whole of it. You need both. You need to measure reliability *and* you need to measure bias on identity-correlated covariates, and you need to publish them together.
+The *first* problem in pro-surf-judging accountability is that the most-cited defense of the system — high inter-judge correlation — is half of the necessary evidence and not the whole of it. You need both. You need to measure reliability *and* you need to measure bias on identity-correlated covariates, and you need to publish them together.
 
 The second problem is that bias on identity-correlated covariates is hard to measure publicly without per-judge data. The WSL has been releasing only panel-trim-mean scores. The trim-mean operation hides the per-judge anchoring, the per-judge calibration drift, the per-judge compatriot patterns. We were able to recover per-judge data on 86 percent of the corpus by scraping Common Crawl WARC archives and the Wayback Machine. That's the only reason the analyses in this series are possible. The WSL itself does not publish them.
 
@@ -73,7 +73,7 @@ The WSL could implement this tomorrow. They have the per-judge data. They have a
 
 Surfing has not had its scandal. It is not going to have a scandal in the conventional sense — there's no Salt Lake City moment lurking. What surfing has, instead, is a pile of academic literature now pointing out that the inter-judge correlation everybody keeps quoting is a necessary but not sufficient condition for fair judging. The conversation has shifted. The ICC defense is no longer enough.
 
-The data is there. The methods are there. The only remaining question is whether the WSL — which already, as our first piece in this series documented, appears to have quietly run one of the most aggressive subjective-sport reforms in recorded history — will follow through and publish the per-judge data the sport needs.
+The data is there. The methods are there. The only remaining question is whether the WSL — whose panel composition has already shifted dramatically, as an earlier piece in this series documented — will publish the per-judge data the sport needs.
 
 ---
 
@@ -87,4 +87,4 @@ The next move — for surfing, for the WSL, for anyone who cares about the sport
 
 ---
 
-*This is the fourth piece in a six-part series re-analyzing the World Surf League's judging on the largest dataset assembled to date. The next piece looks at how every other subjective sport — figure skating, gymnastics, Olympic boxing — got its judging reform, and what surfing's situation tells us about whether evidence alone is sufficient to drive reform when there has been no scandal. The full academic version is forthcoming on SportRxiv.*
+*This is the fourth piece in a six-part series re-analyzing the World Surf League's judging on the largest dataset assembled to date. The next piece looks at how every other subjective sport — figure skating, gymnastics, Olympic boxing — got its judging reform, and what surfing's situation tells us about whether evidence alone is sufficient to drive reform when there has been no scandal.*

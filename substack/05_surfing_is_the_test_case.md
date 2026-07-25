@@ -13,10 +13,6 @@
 
 ## Every other subjective sport got its judging reform after a scandal. Surfing has the data and not the scandal — which makes it the experiment for whether evidence alone is enough to fix a sport
 
-_A note before we start: this piece is about how subjective-sport governance has historically responded to evidence of bias. Specific judges and athletes are not the subject. Subjective-sport judging systems produce measurable, identity-correlated patterns unless transparency and panel design actively counteract them. That is the universal claim of the cross-sport literature. The question is what gets a sport to act on it._
-
----
-
 ## I. Marie-Reine Le Gougne
 
 The first thing she said was that she had been pressured.
@@ -79,7 +75,7 @@ Surfing's complaints about judging are not new. Brazilian-judge ratios, Australi
 
 What surfing has not had is a Marie-Reine Le Gougne. There has been no confession. No CAS ruling. No IOC exclusion. The judging body has never been confronted with a discrete public moment of the kind that has historically forced subjective sports to reform.
 
-The closest surfing has come is the World Surf League's quiet panel-composition shift after October 2023, when Luiz "Luli" Pereira replaced Pritamo Ahrendt as head judge. Brazilian-judge counts on Brazilian-surfer panels fell by half over three years. The shift was not announced as a reform. There was no press release. The data shows the change; the WSL has never publicly described it.
+The closest surfing has come is a rolling controversy cycle — by mid-2026 the WSL had released a public judging-criteria video ahead of the Rio Pro amid heated scoring debates — plus the quiet halving of Brazilian-judge counts on Brazilian-surfer panels after late 2023, a compositional shift the data shows clearly even though its cause (assignment policy versus roster change) can't be separated from public records.
 
 That is not the same as a Le Gougne moment.
 
@@ -129,4 +125,4 @@ We're about to find out whether that's enough.
 
 ---
 
-*This is the fifth piece in a six-part series re-analyzing the World Surf League's judging on the largest dataset assembled to date. The next and final piece looks ahead to the 2028 Olympic surfing event in Los Angeles, registers a set of falsifiable predictions about what LA28 will look like under unreformed judging, and proposes a four-part reform menu derived from the cross-sport precedent. The full academic version of the series is forthcoming on SportRxiv.*
+*This is the fifth piece in a six-part series re-analyzing the World Surf League's judging on the largest dataset assembled to date. The next and final piece looks ahead to the 2028 Olympic surfing event in Los Angeles, registers a set of falsifiable predictions about what LA28 will look like under unreformed judging, and proposes a four-part reform menu derived from the cross-sport precedent.*

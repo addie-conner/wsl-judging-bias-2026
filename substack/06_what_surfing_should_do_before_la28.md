@@ -13,15 +13,11 @@
 
 ## Three reforms we know work, one reform that has never been tried, and what the data forecasts will happen at the next Olympic surfing event if nothing changes
 
-_A note on athlete naming before we start: this piece names specific surfers in the context of structural model-risk forecasts derived from public WSL Championship Tour scoring data. The forecasts are not predictions about how individual athletes will perform; they are predictions about how the unreformed judging architecture will treat surfer profiles of various kinds. Per-surfer model-risk rankings are deliberately moved to a sealed appendix at `outputs/olympic_2028_la_predictions_locked.json` for that reason. The body of this piece names individuals only in pairing-level scenarios, which are about heat structure rather than athlete character._
-
----
-
 Surfing returns to the Olympics in summer 2028 at Lower Trestles in San Clemente, California. Predictable waves. American venue. A host-nation contingent on the start list that is likely to be deep, though final qualification hasn't locked yet. The 2028 event will be the first major-stakes international surf competition since Paris 2024, and the first held on what is unambiguously American home soil.
 
 This is, on every dimension the data tracks, a higher-stakes test than Paris was. Paris was held on French Polynesian water with an ISA panel and minimal home-crowd presence, and even Paris reproduced four out of the five WSL bias mechanisms we measured. Trestles won't have those mitigating factors. The crowd will be partisan. The venue rewards local knowledge that the host-country surfers grew up with and that visitors will see for a week before competition starts.
 
-A note on the judges: the ISA judging pool that operates the Olympic surfing event is, as a matter of public record, distinct from the WSL Championship Tour pool, but the two have meaningful overlap — several individual judges have served on both. The bias mechanisms we have measured on WSL data may transfer in part or in whole to the ISA panel; whether they do is itself an empirical question that LA28 will help answer. The forecasts below assume material transfer; if ISA's pool turns out to be substantively different, the forecasts will be falsified in a different and equally informative way.
+One structural caveat: the ISA judging pool that runs the Olympic event is distinct from the WSL Championship Tour pool, with meaningful overlap — several judges have served on both. The forecasts below assume the measured WSL patterns transfer; if ISA's pool behaves differently, the forecasts fail in a different and equally informative way.
 
 The question is what to do about it. The answer, to the surprise of nobody who has read the cross-sport literature, is not complicated. There are three reforms with documented bias-reduction effects in other subjective sports, plus one reform that has never been tried but is approximately free to implement.
 
@@ -39,9 +35,9 @@ USA wave-score uplift at LA28 — the simplest test of "are American surfers bei
 
 Day-of-event amplification — scores tending to drift higher as the event progresses — predicts about a sixth of a point per day. Smaller than the regular tour, but not zero.
 
-Most-likely-controversial pairings, conditional on draw — these are scenario examples based on currently modeled seed assumptions, not claims about the final LA28 qualification list (top 3 if drawn): Seth Moniz (USA, projected seed 19) vs Italo Ferreira (BRA, projected seed 2); Imaikalani deVault (USA, projected seed 18) vs Italo Ferreira; Seth Moniz vs Jack Robinson (AUS, projected seed 4). Each pairing combines a USA-vs-foreign matchup with a substantial seeding gap that makes a close result statistically unlikely without a bias channel.
+Most-likely-controversial pairing profiles, conditional on draw: matchups that pair a lower-seeded host-nation surfer against a top-seeded visitor, where a close result would be statistically surprising. The registered predictions rank specific pairings; the structural profile matters more than the names, and final qualification won't lock until 2027.
 
-Per-surfer model-risk exposure rankings — the surfers most exposed to *adverse* model-risk under the unreformed regime, and the surfers most exposed to *favorable* model-risk — are SHA-locked in the sealed appendix `outputs/olympic_2028_la_predictions_locked.json`. The per-surfer rankings are deliberately not published in the body of this piece. The reasoning is straightforward: individual athletes will read the predictions before competing in their Olympic event, and the reputational asymmetry of pre-publication is unfavorable. The sealed structure preserves the falsification design — the predictions are committed, the resolution is binding — while limiting the pre-event reputational footprint to what the methodology requires.
+Per-surfer model-risk rankings are held privately, with only the file's SHA-256 fingerprint published in the replication archive; the plaintext unseals when the LA28 final concludes. Athletes shouldn't have to read forecasts about themselves before competing, and publishing the fingerprint now makes the eventual unsealing verifiable.
 
 These are pre-event predictions. They resolve at the 2028 final. If reforms 1–3 (below) are implemented before LA28, the unreformed-baseline predictions become reform tests rather than baseline forecasts; the expected direction is clear (compatriot-panel exposure should fall, round-number clustering should drop, day-of-event amplification should weaken), and the magnitude of expected reduction — based on the figure-skating IJS post-reform window measured by Zitzewitz (2014) and the gymnastics post-Athens window measured by Heiniger and Mercier (2018, 2021) — runs roughly a third to a half on the cleanest categories. If nothing changes, the predictions resolve against the unreformed baseline. The data will tell us which.
 
@@ -61,7 +57,7 @@ The single highest-leverage reform on the table, by every available empirical be
 
 ## Reform 2: Integer-scale scoring (kills round-number anchoring)
 
-The round-number clustering signature in WSL judging — 60 percent of individual judge-scores ending in .0/.25/.5/.75 against a 4-percent random baseline — is the most-replicable, most-bulletproof, most-survives-every-correction finding in our entire 17-year corpus. It is also a property of how humans count under time pressure, not a property of WSL judges specifically. Olympic divers exhibit it. Gymnastics judges exhibit it. Real-estate listings exhibit it. Tip jars exhibit it.
+The round-number clustering signature in WSL judging — 60 percent of individual judge-scores ending in .0 or .5 against a 20-percent random baseline — is the most-replicable, most-bulletproof, most-survives-every-correction finding in our entire 17-year corpus. It is also a property of how humans count under time pressure, not a property of WSL judges specifically. Olympic divers exhibit it. Gymnastics judges exhibit it. Real-estate listings exhibit it. Tip jars exhibit it.
 
 You can fix it without fixing the judges. You change the scale.
 
@@ -77,7 +73,7 @@ Implementation cost for surfing: a software update to the scoring tablet, one ev
 
 ## Reform 3: Panel-rotation accountability rule
 
-The WSL appears to have implemented this informally between October 2023 and the present. The data shows it: the average count of Brazilian judges on Brazilian-surfer panels fell from 1.72 in 2018 to 0.84 in 2026, with a slope no random shuffle of the year labels reproduces in 1,000 attempts. Whatever Luiz "Luli" Pereira did when he took over as head judge in 2023, it dramatically reduced compatriot panel-stacking.
+The data suggests something like this may already have happened informally at the WSL: the average count of Brazilian judges on Brazilian-surfer panels fell from 1.72 in 2018 to 0.84 in 2026 — though Brazilian-judge counts fell on all panels in the same window, so the public data can't separate an assignment policy from roster change. Codifying the rule would make the outcome deliberate rather than incidental, whatever its current cause.
 
 ISA could codify this directly for LA28. The rule is: no judge scores a heat that contains a compatriot surfer. Gymnastics has had a version of this rule since 2008. Figure skating has a softer version (compatriot judges' scores can be discounted from trim-mean computation). Boxing's post-McLaren reforms moved toward something similar. It is not a controversial reform. It is the most operationally unambiguous of the three.
 
@@ -89,9 +85,9 @@ Implementation cost: ISA panel-assignment policy update. Operational.
 
 This reform has never been tried in any subjective sport. It is the one we are using to write this article.
 
-Here is what it looks like in practice. Before each event, independent research groups register specific, falsifiable, quantitative predictions about what the bias signatures will look like at that event — for example, *the round-number share at LA28 will land between 20% and 31%*. Each prediction is committed to a public, time-stamped ledger so it cannot be retroactively edited. Each prediction has a pre-specified rule for whether it counted as right or wrong. After the event, the predictions are scored on accuracy using a standard forecasting metric called the Brier score (zero for perfect, one for systematically wrong; lower is better, the way golf works).
+Here is what it looks like in practice. Before each event, independent research groups register specific, falsifiable, quantitative predictions about what the bias signatures will look like at that event — for example, *the round-number share at LA28 will land between 20% and 31%*. Each prediction is committed to a public, time-stamped ledger so it cannot be retroactively edited. Each prediction has a pre-specified rule for whether it counted as right or wrong. After the event, the predictions are scored on accuracy using standard forecasting metrics — the Brier score for yes/no outcomes (perfect is 0, coin-flip guessing scores 0.25, maximally wrong is 1) and interval-based scores for the continuous forecasts.
 
-We have registered 49 such predictions for the 2026 WSL Championship Tour and the 2028 Olympic surfing event. They are public. They will resolve. The Brier scores will tell us, prospectively, how well the analysis in this paper transfers to events that have not happened yet. The pre-registration commit and the locked prediction file are addressable at git SHA `1ee95a5e4ccb` against heats SHA `7f07fb121abe`; the LA28 forecast specifically is in `outputs/olympic_2028_la_predictions.md` and `outputs/olympic_2028_la_predictions_locked.json` in the public replication archive. The infrastructure is platform-agnostic — other independent research groups should register their own predictions on their own infrastructure; the registration discipline is what matters, not which specific platform implements it.
+We have registered 49 such predictions for the 2026 WSL Championship Tour and the 2028 Olympic surfing event. They are public. They will resolve. The Brier scores will tell us, prospectively, how well the analysis in this paper transfers to events that have not happened yet. The LA28 forecast is registered in `outputs/olympic_2028_la_predictions.md` in the public replication archive, with the per-surfer appendix held privately behind a published SHA-256 fingerprint. The infrastructure is platform-agnostic — other independent research groups should register their own predictions on their own infrastructure; the registration discipline is what matters, not which specific platform implements it.
 
 The function of public Brier scoring in a subjective sport is the same as the function of public per-judge data: reputational discipline through information disclosure. The difference is that Brier scoring disciplines the *analysts* rather than the *judges*. It prevents a research community from quietly walking away from predictions that don't pan out, or from selectively emphasizing the predictions that do. It creates a pile of forecasting accuracy data that accumulates across events and that any subsequent reform debate can cite.
 
@@ -103,7 +99,7 @@ Implementation cost is close to zero. The infrastructure is already public. ISA 
 
 If ISA wants reforms 1–3 in place before LA28, with enough lead time for the bias-reduction effects to compound and for measurement to be possible, the timeline looks like this:
 
-- **Q4 2026 (now):** ISA committee adopts panel-rotation rule (Reform 3) for the 2027 World Surfing Games.
+- **Q4 2026:** ISA committee adopts panel-rotation rule (Reform 3) for the 2027 World Surfing Games.
 - **Q1 2027:** Software update for integer-scale scoring (Reform 2). Pilot at WSG 2027.
 - **Q2 2027:** Public per-judge data release pilot (Reform 1). One event.
 - **Q3 2027:** Publish initial results from the pilot. Refine before LA28.
@@ -128,4 +124,4 @@ Either way, we'll know.
 
 ---
 
-*This is the sixth and final piece in a series re-analyzing WSL judging on the largest dataset assembled to date. The full academic version is forthcoming on SportRxiv. The data, the analyses, the SHA-locked pre-registration, and the 49 prospective predictions are publicly available — including the LA 2028 forecast registered May 4, 2026, against git SHA `1ee95a5e4ccb`. They will resolve at the Olympic surfing final in summer 2028.*
+*This is the sixth and final piece in a series re-analyzing WSL judging on the largest dataset assembled to date. The data, the analyses, the SHA-locked pre-registration, and the 49 prospective predictions are publicly available — including the LA 2028 forecast registered May 4, 2026. They will resolve at the Olympic surfing final in summer 2028.*
