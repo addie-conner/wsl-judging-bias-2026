@@ -1,0 +1,74 @@
+{
+  "description": "Round-number anchoring restated on the true 0.1-precision scale. Null = 2/10 tenth-endings (.0, .5) = 20%. The .0/.25/.5/.75-vs-4/20 framing was on a wrong 0.01 scale; .25/.75 endings do not occur.",
+  "n_scores": 301478,
+  "hundredths_digit_always_zero": true,
+  "share_hundredths_zero": 1.0,
+  "n_scores_ending_x5": 0,
+  "share_end_0": 0.2782,
+  "share_end_5": 0.3206,
+  "share_0_or_5": 0.5988,
+  "null_share_0_or_5": 0.2,
+  "excess_multiple": 2.994,
+  "per_judge_nationality_2018plus": {
+    "Brazil": {
+      "n": 71855,
+      "share_end_0": 0.2631,
+      "share_end_5": 0.3178,
+      "share_0_or_5": 0.5809
+    },
+    "Australia": {
+      "n": 68782,
+      "share_end_0": 0.2737,
+      "share_end_5": 0.3411,
+      "share_0_or_5": 0.6148
+    },
+    "United States": {
+      "n": 41017,
+      "share_end_0": 0.2596,
+      "share_end_5": 0.3102,
+      "share_0_or_5": 0.5698
+    },
+    "Basque Country": {
+      "n": 32059,
+      "share_end_0": 0.2823,
+      "share_end_5": 0.3281,
+      "share_0_or_5": 0.6104
+    },
+    "France": {
+      "n": 15388,
+      "share_end_0": 0.2705,
+      "share_end_5": 0.3178,
+      "share_0_or_5": 0.5883
+    },
+    "South Africa": {
+      "n": 8822,
+      "share_end_0": 0.3263,
+      "share_end_5": 0.3367,
+      "share_0_or_5": 0.663
+    },
+    "Hawaii": {
+      "n": 7998,
+      "share_end_0": 0.2801,
+      "share_end_5": 0.2703,
+      "share_0_or_5": 0.5504
+    },
+    "Portugal": {
+      "n": 7933,
+      "share_end_0": 0.296,
+      "share_end_5": 0.324,
+      "share_0_or_5": 0.6199
+    },
+    "Japan": {
+      "n": 5011,
+      "share_end_0": 0.2963,
+      "share_end_5": 0.3367,
+      "share_0_or_5": 0.633
+    },
+    "French Polynesia": {
+      "n": 1050,
+      "share_end_0": 0.2676,
+      "share_end_5": 0.3086,
+      "share_0_or_5": 0.5762
+    }
+  }
+}

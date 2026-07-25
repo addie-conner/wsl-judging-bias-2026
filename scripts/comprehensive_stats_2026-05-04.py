@@ -27,7 +27,7 @@ import numpy as np
 import pandas as pd
 warnings.filterwarnings("ignore")
 
-ROOT = Path("/Users/addieconner/chorus/wsl")
+ROOT = Path(__file__).resolve().parent.parent
 CHORUS = Path("/Users/addieconner/chorus")
 sys.path.insert(0, str(CHORUS))
 

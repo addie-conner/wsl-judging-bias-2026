@@ -79,7 +79,7 @@ Surfing's complaints about judging are not new. Brazilian-judge ratios, Australi
 
 What surfing has not had is a Marie-Reine Le Gougne. There has been no confession. No CAS ruling. No IOC exclusion. The judging body has never been confronted with a discrete public moment of the kind that has historically forced subjective sports to reform.
 
-The closest surfing has come is the World Surf League's quiet panel-composition shift after October 2023, when Renato Pereira replaced Pritamo Ahrendt as head judge. Brazilian-judge counts on Brazilian-surfer panels fell by half over three years. The shift was not announced as a reform. There was no press release. The data shows the change; the WSL has never publicly described it.
+The closest surfing has come is the World Surf League's quiet panel-composition shift after October 2023, when Luiz "Luli" Pereira replaced Pritamo Ahrendt as head judge. Brazilian-judge counts on Brazilian-surfer panels fell by half over three years. The shift was not announced as a reform. There was no press release. The data shows the change; the WSL has never publicly described it.
 
 That is not the same as a Le Gougne moment.
 

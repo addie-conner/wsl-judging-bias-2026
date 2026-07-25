@@ -1,0 +1,1 @@
+970a57e9057dad1a014c1fb8c6f0c90801abe3ff11628727f51bdcfc12c2ea3c  SHA-256 of the per-surfer prediction appendix (olympic_2028_la_predictions_locked.json). The plaintext file is held privately pending an OSF embargo deposit; it unseals when the LA28 surfing final concludes.

@@ -88,11 +88,11 @@ After LA28 surfing concludes, harvest the post-event score sheets and re-run wsl
   - **M3 compatriot uplift**: success if realized USA uplift falls within the [CI_lo, CI_hi] = [-0.290, +0.617] pts predictive interval. Note the interval crosses zero — we are predicting that LA28 ISA-panel constraints neutralize the Trestles-only point estimate.
   - **M4 day-of-event slope**: success if realized Spearman rho falls within predictive interval; we expect this mechanism most likely to fail (Olympic 2024 already showed opposite-sign null).
 
-  - **Per-surfer**: collect realized per-surfer residuals and rank them; compute Spearman( predicted likelihood_robbed, realized residual_deficit ) and Spearman( predicted likelihood_unfair_gift, realized residual_surplus ). Success is rho > 0 with p < 0.10. The forecasting-agent walk-forward AUC was 0.47 on the WSL CT corpus, so per-surfer is the WEAKEST claim — we expect rho ~ 0.10-0.20.
+  - **Per-surfer**: per-surfer robbery and unfair-gift risk rankings are held privately pending an OSF embargo deposit; SHA-256 of the sealed file is in `outputs/SEALED_PREDICTIONS_SHA256.txt`. After LA28 concludes: collect realized per-surfer residuals and rank them; compute Spearman( predicted likelihood_robbed, realized residual_deficit ) and Spearman( predicted likelihood_unfair_gift, realized residual_surplus ). Success is rho > 0 with p < 0.10. The forecasting-agent walk-forward AUC was 0.47 on the WSL CT corpus, so per-surfer is the WEAKEST claim — we expect rho ~ 0.10-0.20.
 
   - **Per-pairing**: if any of the top-10 pairings actually occurs at LA28 and produces a documented controversy (>=2 high-engagement post-event 'robbed' threads with >50 score within 14 days), score that as a hit. Pre-register P(>=1 hit) >= 0.30 given Olympic format compresses high-stakes density.
 
-Composite Brier across M1-M4 < 0.20 is the headline success threshold for the ensemble. The SHA-locked json is the source of truth — any retroactive refit fails the no-regress gate.
+Composite score across M1-M4: binary outcomes (per-pairing controversy hits) scored with Brier; continuous interval forecasts (M1 round-number share, M3 USA uplift, M4 day-slope) scored with CRPS. Aggregation rule to be finalized in the locked resolution protocol before the first resolution event. The SHA-256 of the sealed per-surfer appendix (in `outputs/SEALED_PREDICTIONS_SHA256.txt`) is the source of truth — any retroactive refit fails the no-regress gate.
 
 ## 5. Honest Caveats
 

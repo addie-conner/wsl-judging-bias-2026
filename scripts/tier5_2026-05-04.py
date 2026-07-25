@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 warnings.filterwarnings("ignore")
 
-ROOT = Path("/Users/addieconner/chorus/wsl")
+ROOT = Path(__file__).resolve().parent.parent
 HEATS = pd.read_parquet(ROOT / "data" / "heats.parquet")
 JUDGES = pd.read_parquet(ROOT / "data" / "judges.parquet")
 HOLDOUT = pd.read_parquet(ROOT / "data" / "heats_holdout.parquet")

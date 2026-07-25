@@ -1,6 +1,6 @@
 # WSL Judging Bias — Research Series (Conner 2026)
 
-Public replication archive for a three-paper research series on bias in World Surf League judging, 2009–2026.
+Public replication archive for a four-paper research series on bias in World Surf League judging, 2009–2026.
 
 **Author:** Addie Conner (independent; Chorus Research)
 **ORCID:** [0009-0007-7853-4140](https://orcid.org/0009-0007-7853-4140)
@@ -11,20 +11,21 @@ Public replication archive for a three-paper research series on bias in World Su
 
 ## What's here
 
-This repository contains the largest publicly-available WSL judging dataset assembled (60,834 panel-trim-mean wave scores; 301,478 individual judge-scoring decisions; 86.3% with judge-nationality coverage; 2009–2026, men's and women's CT), plus the full analysis pipeline and three companion manuscripts.
+This repository contains the largest publicly-available WSL judging dataset assembled (60,834 panel-trim-mean wave scores; 301,478 individual judge-scoring decisions; 86.3% with judge-nationality coverage; 2009–2026, men's and women's CT), plus the full analysis pipeline and four companion manuscripts.
 
-### Three manuscripts
+### Four manuscripts
 
-- **`manuscript/paper1_empirical.md`** — *Manufacturing Consensus: Mechanisms of Subjective Bias in Professional Surf Judging.* The empirical flagship.
+- **`manuscript/paper1_empirical.md`** — the empirical flagship (panel-level and per-judge analysis of WSL judging, 2009–2026).
 - **`manuscript/paper2_methodology.md`** — *Eighteen Gates and the Causality Ladder.* Methodology framework for bias identification in subjective-sport judging.
 - **`manuscript/paper3_reform.md`** — *Reforming Olympic Surfing Judging Before LA 2028.* Four-part reform agenda + SHA-locked prospective forecast for the 2028 LA Olympic surfing event.
+- **`manuscript/paper4_time_pressure.md`** — *Time Pressure Does Not Explain Round-Number Anchoring* — pre-registered mechanism test, 49,010 judge decisions.
 
 `manuscript/submission/` contains submission-ready DOCX versions, the cover letter for *Journal of Quantitative Analysis in Sports*, the APA-7 reference list, the BibTeX file, and the data-availability statement.
 
 ### Pre-registration and held-out validation
 
 - **`outputs/preregistration_2026-05-03.md`** — pre-registered hypotheses, statistical specifications, and falsifiable effect-size predictions, sealed before any of the analyses reported in Paper 1 were run.
-- **`data/HOLDOUT_MANIFEST.json`** — sealed 2025 women's Championship Tour replication set (n = 1,815 wave-rows; sha256 `c7130018b373836efd3b8542e9380a22`).
+- **`data/HOLDOUT_MANIFEST.json`** — sealed 2025 women's Championship Tour replication set (n = 1,815 wave-rows; sha256 `0c1616d755c3199430a094201209f282759da1fc3826cece0dfdce8f627c371a`).
 
 ### Data
 
@@ -90,7 +91,7 @@ Each script writes its results to a JSON file in `outputs/`. The scripts are det
 
 Until the SportRxiv / MetaArXiv preprint DOIs are assigned, cite as:
 
-> Conner, A. (2026). *Manufacturing Consensus: Mechanisms of Subjective Bias in Professional Surf Judging.* Replication archive: https://github.com/addie-conner/wsl-judging-bias-2026
+> Conner, A. (2026). WSL judging research series. Replication archive: https://github.com/addie-conner/wsl-judging-bias-2026
 
 Once the preprints are live, cite the preprint DOIs in the [preprint registration] section below.
 
@@ -101,6 +102,7 @@ Once the preprints are live, cite the preprint DOIs in the [preprint registratio
 - **Paper 1 (empirical):** [DOI to be added once MetaArXiv preprint is live]
 - **Paper 2 (methodology):** [DOI to be added]
 - **Paper 3 (reform):** [DOI to be added]
+- **Paper 4 (time pressure):** [DOI to be added]
 
 OSF project page: https://osf.io/59szg/
 
@@ -109,3 +111,5 @@ OSF project page: https://osf.io/59szg/
 ## License
 
 Creative Commons Attribution 4.0 International (CC-BY-4.0). You are free to share and adapt the material, including for commercial use, with attribution.
+
+CC-BY-4.0 applies to the text, analysis code, and result files in this archive. The files under `data/` are compilations of factual competition records derived from publicly accessible WSL web surfaces; no license over the underlying scoring records is granted or implied.

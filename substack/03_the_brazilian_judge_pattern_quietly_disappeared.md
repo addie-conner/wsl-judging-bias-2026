@@ -23,7 +23,7 @@ Two.
 
 Every time a Brazilian surfer paddled out for a Championship Tour heat, you could count on roughly two Brazilian judges in the tower scoring them. Five judges per panel. Two of his or her countrymen, on average. The stat moved through comments sections and Slack threads as half-vibe, half-evidence. Brazilian surfer, two Brazilian judges, round it off.
 
-Then on October 11, 2023, the WSL announced that Pritamo Ahrendt was stepping down after fifteen years as head judge. His replacement was Renato Pereira. Brazilian. Ex-CT competitor, longtime panelist. The announcement landed in the back half of a press release about the upcoming Pipeline event. Most fans never read it. The few who did filed it under personnel news.
+Then on October 11, 2023, the WSL announced that Pritamo Ahrendt was stepping down after fifteen years as head judge. His replacement was Luiz "Luli" Pereira. Brazilian. Ex-CT competitor, longtime panelist. The announcement landed in the back half of a press release about the upcoming Pipeline event. Most fans never read it. The few who did filed it under personnel news.
 
 What happened over the next three years is the most consequential reform in modern professional surf judging. The WSL never said a word about it being a reform.
 

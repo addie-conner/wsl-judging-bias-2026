@@ -2,7 +2,7 @@
 
 **Author**: Addie Conner (with Chorus analysis stack)
 **Time-stamped**: 2026-05-03 (UTC)
-**Location of canonical copy**: /Users/addieconner/chorus/wsl/outputs/preregistration_2026-05-03.md
+**Location of canonical copy**: `outputs/preregistration_2026-05-03.md` in the public replication archive.
 **Git commit hash at time of writing**: (computed at SHA-lock step)
 **Status**: LOCKED. Any deviation from this protocol must be reported in the manuscript's Methods or Limitations section.
 
@@ -153,7 +153,7 @@ did not test.*
 
 ## Code and data availability
 
-- Full analysis code at `https://github.com/addie-conner/chorus/tree/main/wsl/`.
+- Full analysis code at `https://github.com/addie-conner/wsl-judging-bias-2026`.
 - Aggregate data publicly redistributable; per-judge data redistributability pending (depends on Wayback ToS).
 - Docker container with reproducibility recipe to be provided in the published version.
 

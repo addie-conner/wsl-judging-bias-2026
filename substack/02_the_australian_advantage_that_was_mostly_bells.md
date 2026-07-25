@@ -23,7 +23,7 @@ That's the kind of number that ends arguments. It clears Bonferroni. It clears f
 
 And yet.
 
-When you test it five different ways, each one slightly more careful than the last, the answer changes. Five times. The same data. Different identification strategies, different answers. By the fifth test the headline number is gone.
+When you test it six different ways, each one slightly more careful than the last, the answer changes. The same data. Different identification strategies, different answers. By the last test the headline number is gone.
 
 This is what it looks like when the most-quoted statistic in a dataset turns out to be, mostly, an artifact of the question being asked.
 
@@ -41,7 +41,7 @@ You see the trick. By holding the wave constant, we're asking: at this specific 
 
 Hold on, says the third-pass methodologist. Within-heat fixed effects discard a lot of data. They might also be controlling away the very effect you're trying to measure, if Australian judges hand out higher scores to *all* surfers at Australian events. There are better tools.
 
-There are. We ran five of them, each more careful than the last. They all asked the same question — *do Australian surfers actually score higher at Australian events?* — but each one made a different effort to rule out a different alternative explanation.
+There are. We ran them, each more careful than the last. They all asked the same question — *do Australian surfers actually score higher at Australian events?* — but each one made a different effort to rule out a different alternative explanation.
 
 **Test 1: just compare the averages.** No controls, no adjustments. Australian surfers at AUS events vs everybody else at AUS events. Result: **+0.616 points**.
 
@@ -67,19 +67,19 @@ If the Australian-bloc effect were real — if Australian judges were padding th
 
 Take Jack Robinson. Take Margaret River, the Australian-leg event he is most associated with.
 
-Across 2022, 2024, and 2025 Margaret River Pros, we have **630 individual judge-scores given to Jack Robinson** — 216 from Australian judges and 414 from non-Australian judges.
+Across the Margaret River Pros from 2018 through 2026, we have **995 individual judge-scores given to Jack Robinson** — 354 from Australian judges and 641 from non-Australian judges.
 
-Australian judges scored Jack Robinson, on average: **4.277**.
+Australian judges scored Jack Robinson, on average: **4.206**.
 
-Non-Australian judges scored Jack Robinson, on average: **4.276**.
+Non-Australian judges scored Jack Robinson, on average: **4.225**.
 
-The difference is **0.002 points**. The t-statistic is 0.01. The p-value is 0.994. By any sensible test, AUS and non-AUS judges scored Jack Robinson **statistically identically** at Margaret River. The +0.21 to +0.55 standard deviations above the venue baseline that Robinson scored in those years was not given to him by Australian judges. Visiting judges saw it the same way.
+The difference is **0.019 points**, with the visiting judges a hair *higher*. The p-value is 0.92. By any sensible test, Australian and non-Australian judges scored Jack Robinson identically at Margaret River. Whatever Robinson earned there, visiting judges saw it the same way his countrymen did.
 
-We ran the same test for Ethan Ewing, who appears in the data as the most-flagged "over-scored" Australian surfer once you account for venue and career baselines (his median-polish residual is +1.34, the second-largest in the entire dataset). Same test, same answer. At Margaret River, Australian judges scored Ewing 5.371. Non-Australian judges scored Ewing 5.410. Non-Australian judges scored him *higher*, by 0.039 points.
+We ran the same test for Ethan Ewing — an Australian whose Margaret River record makes him exactly the profile a compatriot thumb on the scale would produce, if there were one. Across 579 judge-scores, Australian judges scored Ewing 5.180 and non-Australian judges scored him 5.125. This time the Australians came out higher, by 0.055 points, at a p-value of 0.79. Run the comparison on two different surfers and the sign flips. That is what noise looks like. There is no compatriot premium hiding in either test.
 
 Whatever produced the +0.62 OLS estimate, it was not Australian judges putting their thumb on the scale for Australian surfers.
 
-There's one test that would settle the question cleanly, and I haven't run it yet. Take a Championship Tour contest at a wavepool — Surf Ranch in Lemoore, the new Surf Abu Dhabi venue, anywhere the wave is mechanical and identical from one ride to the next. Run the same comparison: do Australian surfers score higher than visitors? If they do, the answer can't be the wave or local knowledge. Every surfer is riding the same wave. Anything left over has to come from somewhere other than what's under their feet. The few wavepool events on the modern Championship Tour with per-judge data — the 2023 Surf Ranch Pro and the 2025 Surf Abu Dhabi Pro — total a few hundred waves between them. Enough to run the test directionally, not enough to call it definitive on its own. That's the cleanest piece of analysis still owed.
+The cleanest version of this test is a wavepool contest — Surf Ranch, Surf Abu Dhabi — where every ride is mechanically identical and local knowledge is worth nothing. If Australians still scored higher there, the explanation couldn't be the wave. The modern wavepool events with per-judge data total only a few hundred waves, enough to run directionally but not to settle anything, so that test stays on the list.
 
 ---
 
@@ -93,7 +93,7 @@ The within-surfer test — same surfer scoring at brand-sponsored events vs even
 
 Same shape as the Australian advantage. The headline correlation is real. The cleaner identification cleans it out. The most plausible explanation is that the top brand-sponsored surfers — Florence, Italo Ferreira, Filipe Toledo, Gabriel Medina, Jack Robinson — are also, simply, the top surfers. They win their heats whether or not their brand is on the banner. The descriptive lift you'd see if you ran the naive comparison is mostly a story about which surfers signed which deals, not about whether the deals shift the scoring.
 
-(Two confounds I haven't separated cleanly: event-sponsor wildcards, which tend to go to brand-affiliated athletes, and the fact that the surfer-sponsor lists I parsed are Wikipedia-page snapshots rather than a year-by-year sponsorship ledger. A clean test would address both. The directional finding is unlikely to flip; the magnitude could move.)
+Two caveats travel with that: event-sponsor wildcards tend to go to brand-affiliated athletes, and the sponsor lists are Wikipedia snapshots rather than year-by-year ledgers. The direction is unlikely to flip; the magnitude could move.
 
 Two completely separate questions about WSL judging. Same answer twice.
 
@@ -105,17 +105,17 @@ The within-heat fixed-effect specification is the technical answer. When you dem
 
 Then where does the between-heat variation come from, if not from compatriot judging? Two candidates. First, scheduling: at Australian events, the Australian-leg seedings produce heat compositions that aren't randomized — the Australian surfers tend to cluster in particular brackets. Second, venue: the heats with the most Australian surfers tend to be at specific venues with specific wave conditions, and the venues with the heaviest local-knowledge advantage produce the biggest pooled effects.
 
-We disaggregated the +0.62 by venue. Margaret River, four years of it: AUS-vs-visitor wave-score differences were +0.011, +0.005, +0.243, and +0.035. Three of four years, essentially nothing. Snapper Rocks, the 2025 Bonsoy Gold Coast Pro: AUS-vs-visitor difference was *minus 0.264*. Australian surfers underperformed visitors at the most-Australian event of 2025 by a meaningful margin.
+We disaggregated the +0.62 by venue. Margaret River, four years of it: AUS-vs-visitor wave-score differences of −0.01, −0.18, +0.32, and −0.10. The sign flips year to year around zero. Snapper Rocks, the 2025 Bonsoy Gold Coast Pro: AUS-vs-visitor difference of *minus 0.30*. Australian surfers underperformed visitors at the most-Australian event of 2025 by a meaningful margin.
 
 Then we got to Bells Beach.
 
-The 2024 Bonsoy Bells contest, 727 wave-scores: **AUS-vs-visitor difference of +0.135**. Modest positive.
+The 2024 Bells contest: **AUS-vs-visitor difference of +0.13**. Modest positive.
 
-The 2025 Bonsoy Bells contest, 696 wave-scores: **AUS-vs-visitor difference of +0.612**. Almost the entire pooled "Australian advantage" packed into a single weeklong event.
+The 2025 Bells contest: **AUS-vs-visitor difference of +0.45** — the largest Australian-versus-visitor differential of any event in the four Australian seasons, packed into a single weeklong contest.
 
-The 2025 Bells Beach event alone — a single weeklong contest in mid-April — accounts for a meaningful chunk of the entire pooled "Australian advantage." Drop the 2025 Snapper event from the analysis (it was negative for Australians, remember) and the apparent Aussie boost gets bigger, not smaller. Drop the 2025 Bells event and most of it disappears. The +0.62 isn't an Australian effect spread across the whole tour. It's a Bells effect.
+A leave-one-event-out check flags 2025 Bells as the single largest contributor to the pooled estimate; the negative Gold Coast event, meanwhile, was pulling the pooled number *down*. The +0.62 isn't an Australian effect spread across the whole tour. It's mostly a Bells effect.
 
-There is a perfectly reasonable, performance-genuine story for why Bells specifically. Bells Beach is the heaviest local-knowledge wave on the calendar. It's a point break with a very specific section that breaks differently depending on swell direction and tide phase. The Bells line-up is a community where Australian surfers grow up surfing. Visiting surfers arrive a week before competition. Bells is also the only contest where you can win a literal 8-foot wood-and-bronze bell on a chain — meaningful ceremony attaches to it; surfers prepare differently. Some fraction of the 0.61 Bells-specific differential is, in all honesty, Australian surfers being better at riding their own home wave.
+There is a perfectly reasonable, performance-genuine story for why Bells specifically. Bells Beach is the heaviest local-knowledge wave on the calendar. It's a point break with a very specific section that breaks differently depending on swell direction and tide phase. The Bells line-up is a community where Australian surfers grow up surfing. Visiting surfers arrive a week before competition. Bells is also the only contest where you can win a literal 8-foot wood-and-bronze bell on a chain — meaningful ceremony attaches to it; surfers prepare differently. Some fraction of the Bells-specific differential is Australian surfers being better at riding their own home wave.
 
 The +0.62 statistic, the most-cited number in this dataset, is mostly the 2025 Bells Beach Pro.
 
@@ -127,7 +127,7 @@ The naive +0.62 is real, in the arithmetic sense. The numbers add up. But when y
 
 That's a long way from +0.62.
 
-The fans yelling about Australian judging in the comments section have been sort of right. There's a real, descriptive, replicable home-event effect on the WSL Championship Tour. The cross-sport literature is also right. The magnitude is small and the causal mechanism is mostly venue-and-conditions, not judge-nationality. The fans yelling about Jack Robinson at Margaret River are wrong. Australian and non-Australian judges scored him to within 0.002 points of each other. There is no nuance to that finding.
+The fans yelling about Australian judging in the comments section have been sort of right. There's a real, descriptive, replicable home-event effect on the WSL Championship Tour. The cross-sport literature is also right. The magnitude is small and the causal mechanism is mostly venue-and-conditions, not judge-nationality. The fans yelling about Jack Robinson at Margaret River are wrong. Australian and non-Australian judges scored him to within two hundredths of a point of each other. There is no nuance to that finding.
 
 The fans yelling about Billabong's surfers winning at Billabong's events are also sort of right and sort of wrong, in the same shape. The descriptive lift is real. The causal mechanism is mostly that Billabong sponsors the best surfers. Two surveys on the same data, same answer.
 
@@ -137,4 +137,4 @@ That's not a flaw in the data. It's a recurring shape in how data gets cited. Es
 
 ---
 
-*This is the second piece in a six-part series re-analyzing WSL judging. The next piece looks at the most-charged complaint in pro surfing — that Brazilian judges favor Brazilian surfers — and what the data shows happened, quietly, after October 2023.*
+*This piece draws on the same re-analysis of WSL judging as the last one — 60,834 wave-rows and 301,478 individual judge-scores, 2009 through 2026. Data, code, and the full analysis archive are available on request.*

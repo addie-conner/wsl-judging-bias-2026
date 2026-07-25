@@ -1,0 +1,79 @@
+{
+  "description": "Mean Brazilian-passport judges per panel by year, 2018+, on Brazilian-surfer panels and on all mapped-surfer panels. Wave-level rows (each row = one scored wave, i.e. one panel instance).",
+  "coverage_caveats": {
+    "judge_nationality_years": "populated 2018+ only (0% for 2009-2017)",
+    "surfer_country_source": "imputed for 2018+ from heats.parquet surfer_name->country map; surfer_country in judges.parquet is populated only pre-2018",
+    "surfer_name_map_size": 110,
+    "imputation_fill_rate_2018plus": 0.6853,
+    "note": "The whole-roster (all-panels) series declines in lockstep with the Brazilian-surfer series, so judge-supply change (roster churn) is not separable from assignment policy without judge-identity data. No causal claim is made from this table."
+  },
+  "table": [
+    {
+      "year": 2018,
+      "bra_surfer_panels_mean_bra_judges": 1.7114,
+      "bra_surfer_panels_n": 1788,
+      "all_panels_mean_bra_judges": 1.6008,
+      "all_panels_n": 6375
+    },
+    {
+      "year": 2019,
+      "bra_surfer_panels_mean_bra_judges": 1.5452,
+      "bra_surfer_panels_n": 2302,
+      "all_panels_mean_bra_judges": 1.5278,
+      "all_panels_n": 8171
+    },
+    {
+      "year": 2021,
+      "bra_surfer_panels_mean_bra_judges": 1.3652,
+      "bra_surfer_panels_n": 230,
+      "all_panels_mean_bra_judges": 1.146,
+      "all_panels_n": 1041
+    },
+    {
+      "year": 2022,
+      "bra_surfer_panels_mean_bra_judges": 1.5666,
+      "bra_surfer_panels_n": 2019,
+      "all_panels_mean_bra_judges": 1.5422,
+      "all_panels_n": 5889
+    },
+    {
+      "year": 2023,
+      "bra_surfer_panels_mean_bra_judges": 1.568,
+      "bra_surfer_panels_n": 1567,
+      "all_panels_mean_bra_judges": 1.5443,
+      "all_panels_n": 4874
+    },
+    {
+      "year": 2024,
+      "bra_surfer_panels_mean_bra_judges": 0.9991,
+      "bra_surfer_panels_n": 1121,
+      "all_panels_mean_bra_judges": 0.9917,
+      "all_panels_n": 4445
+    },
+    {
+      "year": 2025,
+      "bra_surfer_panels_mean_bra_judges": 0.8985,
+      "bra_surfer_panels_n": 1202,
+      "all_panels_mean_bra_judges": 0.8863,
+      "all_panels_n": 4486
+    },
+    {
+      "year": 2026,
+      "bra_surfer_panels_mean_bra_judges": 0.841,
+      "bra_surfer_panels_n": 673,
+      "all_panels_mean_bra_judges": 0.7559,
+      "all_panels_n": 1352
+    }
+  ],
+  "exploratory_year_trend": {
+    "observed_slope_bra_judges_per_year": -0.0946,
+    "event_cluster_bootstrap_ci95": [
+      -0.1196,
+      -0.0642
+    ],
+    "n_events": 90,
+    "n_bootstrap": 2000,
+    "label": "EXPLORATORY \u2014 describes year-slope sampling variability only; no causal claim"
+  },
+  "n_source_rows_2018plus": 53455
+}

@@ -1,0 +1,56 @@
+{
+  "description": "AUS vs non-AUS judge mean scores for named Australian surfers at Margaret River, per judge decision. Recomputed from judges.parquet; supersedes the empty JR_per_event/EW_per_event objects in per_judge_counterfactual_2026-05-04.json.",
+  "note_nationality_window": "judge nationality is populated 2018+ only, so only 2018+ Margaret River appearances contribute judge-decision rows.",
+  "robinson": {
+    "surfer": "Jack Robinson",
+    "venue": "Margaret River (all naming variants)",
+    "events": [
+      "Boost Mobile Margaret River Pro Presented By Corona",
+      "Margaret River Pro",
+      "Uluwatu Ct Margaret River Pro",
+      "Western Australia Margaret River Pro"
+    ],
+    "years": [
+      2018,
+      2019,
+      2021,
+      2022,
+      2024,
+      2025,
+      2026
+    ],
+    "n_wave_rows": 199,
+    "aus_judge_mean": 4.2062,
+    "aus_judge_n": 354,
+    "non_aus_judge_mean": 4.2254,
+    "non_aus_judge_n": 641,
+    "diff_aus_minus_nonaus": -0.0192,
+    "welch_t": -0.0995,
+    "welch_p": 0.9208
+  },
+  "ewing": {
+    "surfer": "Ethan Ewing",
+    "venue": "Margaret River (all naming variants)",
+    "events": [
+      "Boost Mobile Margaret River Pro Presented By Corona",
+      "Margaret River Pro",
+      "Western Australia Margaret River Pro"
+    ],
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "n_wave_rows": 117,
+    "aus_judge_mean": 5.1803,
+    "aus_judge_n": 234,
+    "non_aus_judge_mean": 5.1252,
+    "non_aus_judge_n": 345,
+    "diff_aus_minus_nonaus": 0.0551,
+    "welch_t": 0.2625,
+    "welch_p": 0.7931
+  }
+}

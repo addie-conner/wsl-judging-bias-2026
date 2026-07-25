@@ -45,7 +45,7 @@
         "w"
       ],
       "training_sha256": "9f3a928ee7a058645873bbae1d45030a",
-      "holdout_sha256": "c7130018b373836efd3b8542e9380a22",
+      "holdout_sha256": "0c1616d755c3199430a094201209f282759da1fc3826cece0dfdce8f627c371a",
       "locked_at": "2026-05-03"
     },
     "n_holdout": 1815,

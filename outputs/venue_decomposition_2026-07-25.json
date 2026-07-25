@@ -1,0 +1,95 @@
+{
+ "description": "AUS-surfer vs visitor mean wave-score by Australian-hosted CT event, heats.parquet 2022-2025.",
+ "events": [
+  {
+   "year": 2022,
+   "event": "2022 Margaret River Pro",
+   "n_wave_scores": 597,
+   "aus_mean": 4.054,
+   "visitor_mean": 4.061,
+   "aus_minus_visitor": -0.007,
+   "n_aus": 174,
+   "n_visitor": 423
+  },
+  {
+   "year": 2022,
+   "event": "2022 Rip Curl Pro Bells Beach",
+   "n_wave_scores": 613,
+   "aus_mean": 4.576,
+   "visitor_mean": 4.488,
+   "aus_minus_visitor": 0.088,
+   "n_aus": 221,
+   "n_visitor": 392
+  },
+  {
+   "year": 2023,
+   "event": "2023 Rip Curl Pro Bells Beach",
+   "n_wave_scores": 390,
+   "aus_mean": 3.885,
+   "visitor_mean": 3.917,
+   "aus_minus_visitor": -0.031,
+   "n_aus": 135,
+   "n_visitor": 255
+  },
+  {
+   "year": 2023,
+   "event": "2023 Western Australia Margaret River Pro",
+   "n_wave_scores": 698,
+   "aus_mean": 4.472,
+   "visitor_mean": 4.656,
+   "aus_minus_visitor": -0.184,
+   "n_aus": 197,
+   "n_visitor": 501
+  },
+  {
+   "year": 2024,
+   "event": "2024 Rip Curl Pro Bells Beach presented by Bonsoy",
+   "n_wave_scores": 536,
+   "aus_mean": 4.429,
+   "visitor_mean": 4.297,
+   "aus_minus_visitor": 0.133,
+   "n_aus": 111,
+   "n_visitor": 425
+  },
+  {
+   "year": 2024,
+   "event": "2024 Western Australia Margaret River Pro",
+   "n_wave_scores": 549,
+   "aus_mean": 4.759,
+   "visitor_mean": 4.438,
+   "aus_minus_visitor": 0.321,
+   "n_aus": 134,
+   "n_visitor": 415
+  },
+  {
+   "year": 2025,
+   "event": "2025 Bonsoy Gold Coast Pro",
+   "n_wave_scores": 638,
+   "aus_mean": 3.622,
+   "visitor_mean": 3.916,
+   "aus_minus_visitor": -0.295,
+   "n_aus": 137,
+   "n_visitor": 501
+  },
+  {
+   "year": 2025,
+   "event": "2025 Rip Curl Pro Bells Beach pres by Bonsoy",
+   "n_wave_scores": 517,
+   "aus_mean": 4.795,
+   "visitor_mean": 4.35,
+   "aus_minus_visitor": 0.445,
+   "n_aus": 118,
+   "n_visitor": 399
+  },
+  {
+   "year": 2025,
+   "event": "2025 Western Australia Margaret River Pro",
+   "n_wave_scores": 521,
+   "aus_mean": 4.198,
+   "visitor_mean": 4.302,
+   "aus_minus_visitor": -0.104,
+   "n_aus": 113,
+   "n_visitor": 408
+  }
+ ]
+}

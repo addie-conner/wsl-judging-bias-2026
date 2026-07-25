@@ -69,13 +69,15 @@ The simplest version: judges score from 0 to 100 in unit increments, and the sys
 
 Alternative version: rotate the displayed increment by 0.01 each wave. The judge's mental palette has no fixed anchor to cluster on, because what counts as "round" changes wave to wave. Same effect.
 
+A natural alternative reform — and one we want to rule out before recommending the architectural fix — is operational rather than architectural: extend the deliberation window. Give judges ninety seconds instead of thirty to submit a score, rotate panels mid-heat to fight fatigue, slow the wave queue. We tested it. Anchoring is detectably time-pressure-sensitive in the corpus, but the effect is small. Extending the typical wave-to-wave gap from twenty-four seconds to seven minutes — Q1 to Q4 of the wave-density distribution — moves the anchoring rate by about two percentage points on a thirty-one-percent baseline. Judge-fatigue across a long competition day moves it by a similar amount. You cannot run the clock long enough to fix this at the operational layer. The fix has to be at the input layer.
+
 Olympic gymnastics implemented an analogous scale-redesign in the 2008 Code of Points, moving from a 10-point holistic scale to a constructed-from-categories deduction system. Round-number clustering at the final-score level dropped from textbook-significant to negligible within a single Olympic cycle.
 
 Implementation cost for surfing: a software update to the scoring tablet, one event-day of testing, written documentation for the judge handbook. We are talking weeks of operational work, not months.
 
 ## Reform 3: Panel-rotation accountability rule
 
-The WSL appears to have implemented this informally between October 2023 and the present. The data shows it: the average count of Brazilian judges on Brazilian-surfer panels fell from 1.72 in 2018 to 0.84 in 2026, with a slope no random shuffle of the year labels reproduces in 1,000 attempts. Whatever Renato Pereira did when he took over as head judge in 2023, it dramatically reduced compatriot panel-stacking.
+The WSL appears to have implemented this informally between October 2023 and the present. The data shows it: the average count of Brazilian judges on Brazilian-surfer panels fell from 1.72 in 2018 to 0.84 in 2026, with a slope no random shuffle of the year labels reproduces in 1,000 attempts. Whatever Luiz "Luli" Pereira did when he took over as head judge in 2023, it dramatically reduced compatriot panel-stacking.
 
 ISA could codify this directly for LA28. The rule is: no judge scores a heat that contains a compatriot surfer. Gymnastics has had a version of this rule since 2008. Figure skating has a softer version (compatriot judges' scores can be discounted from trim-mean computation). Boxing's post-McLaren reforms moved toward something similar. It is not a controversial reform. It is the most operationally unambiguous of the three.
 
