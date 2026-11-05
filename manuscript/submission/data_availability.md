@@ -5,7 +5,7 @@ All data and code supporting the findings in this manuscript are publicly availa
 The archive contains:
 
 - `data/heats.parquet` — 24,901 panel-trim-mean wave-rows used as the aggregate dataset (2022–2025) and the full panel corpus (60,834 panel-trim-mean wave-rows, 2009–2026).
-- `data/judges.parquet` — the per-judge corpus containing 301,478 individual judge-scoring decisions, with judge nationality on 86.3% of judge-score values.
+- `data/judges.parquet` — the per-judge corpus containing 301,478 individual judge-scoring decisions, with judge nationality on 86.3% of judge-score values (all from the 2018–2026 seasons, 97.6% of that era; none for 2009–2017).
 - `data/HOLDOUT_MANIFEST.json` — sealed 2025 women's Championship Tour replication set (n = 1,815 wave-rows; sha256 `0c1616d755c3199430a094201209f282759da1fc3826cece0dfdce8f627c371a`; locked 2026-05-03 UTC).
 - `outputs/preregistration_2026-05-03.md` — pre-registered hypotheses and specifications, sealed at git SHA `7d0e2c8` on 2026-05-03 UTC.
 - `outputs/olympic_2028_la_predictions.md` — 49 SHA-locked prospective predictions for the 2026 WSL Championship Tour and 2028 LA Olympic surfing event, registered at git SHA `1ee95a5e4ccb`. Per-surfer appendix held privately pending an OSF embargo deposit; SHA-256 published at `outputs/SEALED_PREDICTIONS_SHA256.txt`.

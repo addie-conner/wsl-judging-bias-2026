@@ -11,7 +11,7 @@ Public replication archive for a four-paper research series on bias in World Sur
 
 ## What's here
 
-This repository contains the largest publicly-available WSL judging dataset assembled (60,834 panel-trim-mean wave scores; 301,478 individual judge-scoring decisions; 86.3% with judge-nationality coverage; 2009–2026, men's and women's CT), plus the full analysis pipeline and four companion manuscripts.
+This repository contains the largest publicly-available WSL judging dataset assembled (60,834 panel-trim-mean wave scores; 301,478 individual judge-scoring decisions; judge nationality on 86.3% of judge-score values (all from the 2018–2026 seasons, 97.6% of that era; none for 2009–2017); 2009–2026, men's and women's CT), plus the full analysis pipeline and four companion manuscripts.
 
 ### Four manuscripts
 
@@ -30,7 +30,7 @@ This repository contains the largest publicly-available WSL judging dataset asse
 ### Data
 
 - **`data/heats.parquet`** — 24,901 panel-trim-mean wave-rows (2022–2025 men's and women's CT).
-- **`data/judges.parquet`** — 60,834 wave-rows containing 301,478 individual judge-scoring decisions, with judge nationality on 86.3% of judge-score values, spanning 2009–2026.
+- **`data/judges.parquet`** — 60,834 wave-rows containing 301,478 individual judge-scoring decisions, with judge nationality on 86.3% of judge-score values (all from the 2018–2026 seasons, 97.6% of that era; none for 2009–2017); the scores span 2009–2026.
 - **`data/heats_holdout.parquet`** — 1,815 sealed 2025 women's CT wave-rows for held-out replication.
 - **`data/heats_training.parquet`** — 23,086 training-period wave-rows.
 - **`data/wavepool_*`** — 28 panel-trim-mean wave-rows from the 2025 Surf Abu Dhabi Pro (sole wavepool event in the active dataset).
@@ -113,3 +113,7 @@ OSF project page: https://osf.io/59szg/
 Creative Commons Attribution 4.0 International (CC-BY-4.0). You are free to share and adapt the material, including for commercial use, with attribution.
 
 CC-BY-4.0 applies to the text, analysis code, and result files in this archive. The files under `data/` are compilations of factual competition records derived from publicly accessible WSL web surfaces; no license over the underlying scoring records is granted or implied.
+
+## Correction (2026-11-05)
+
+Earlier versions of this README and of the manuscripts stated "86.3% judge-nationality coverage, 2009–2026". The 86.3% figure (260,183 of 301,478 judge-score values) is correct, but all of it comes from the 2018–2026 seasons (97.6% coverage there); there is no judge nationality for 2009–2017. In `judges.parquet`, surfer country is present only for 2009–2017, so no row carries both fields; analyses that need both fill surfer country for 2018+ from a name map. See `FINDINGS_STATUS.md` (entry dated 2026-07-25). Published preprint and submitted versions are being updated separately.
