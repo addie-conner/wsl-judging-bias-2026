@@ -1,5 +1,8 @@
 # Reforming Olympic Surfing Judging Before LA 2028: Four Empirically-Grounded Reforms and a SHA-Locked Prospective Forecast
 
+> **Correction (2026-11-05):** about 11% of the judge-score values in the per-judge corpus (about 33,000–35,000 of 301,478; 2018–2026 rows stored twice) are duplicates, and the Brazilian-judge permutation and ATT results are corrected. See the repository README, "Correction (2026-11-05): duplicate rows".
+
+
 _Policy companion to Conner et al. (2026) Papers 1 and 2 — "Manufacturing Consensus" (empirical) and "Eighteen Gates and the Causality Ladder" (methodology)._
 
 ---

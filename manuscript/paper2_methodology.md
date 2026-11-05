@@ -1,5 +1,8 @@
 # Eighteen Gates and the Causality Ladder: A Validation Framework for Bias Identification in Subjective-Sport Judging
 
+> **Correction (2026-11-05):** about 11% of the judge-score values in the per-judge corpus (about 33,000–35,000 of 301,478; 2018–2026 rows stored twice) are duplicates, and the Brazilian-judge permutation and ATT results are corrected. See the repository README, "Correction (2026-11-05): duplicate rows".
+
+
 _Methodological companion to Conner et al. (2026), "Manufacturing Consensus: Mechanisms of Subjective Bias in Professional Surf Judging."_
 
 ---
